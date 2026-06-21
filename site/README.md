@@ -31,6 +31,10 @@ Serving only the `site/` directory also renders the page, but links to
 - No backend exists.
 - The beta form does not submit, store, email, or persist anything.
 - No analytics provider is connected.
+- `script.js` includes optional provider-agnostic no-op analytics events for
+  local debugging only. They log to the console only when explicitly enabled
+  with `?analyticsDebug=1` or
+  `localStorage.setItem("hcctAnalyticsDebug", "1")`.
 - No checkout, payment, account, or license delivery flow exists.
 - Draft disclosure, responsible-use, and privacy-placeholder documents exist in
   `../docs/`; final legal/privacy terms are still not implemented.
@@ -41,6 +45,7 @@ Serving only the `site/` directory also renders the page, but links to
   rules.
 - Replace draft privacy/disclosure copy and add terms pages before public
   launch.
-- Decide whether analytics are needed, and use privacy-minimal measurement only.
+- Follow `../docs/ANALYTICS_AND_MEASUREMENT.md` before connecting any real
+  analytics provider.
 - Choose a deployment target for static hosting.
 - Add link checking or lightweight content validation if the site grows.

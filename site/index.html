@@ -43,8 +43,18 @@
             role fit.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#beta">Request beta access</a>
-            <a class="button secondary" href="#included">View the tool pack</a>
+            <a
+              class="button primary"
+              href="#beta"
+              data-analytics-event="primary_cta_clicked"
+              data-analytics-label="request_beta_access"
+            >Request beta access</a>
+            <a
+              class="button secondary"
+              href="#included"
+              data-analytics-event="secondary_cta_clicked"
+              data-analytics-label="view_tool_pack"
+            >View the tool pack</a>
           </div>
           <ul class="boundary-list" aria-label="Core boundaries">
             <li>Non-diagnostic</li>
@@ -224,47 +234,91 @@
           </p>
         </div>
         <div class="doc-list" aria-label="Core documents">
-          <a href="../docs/WORKBOOK_v1.md">
+          <a
+            href="../docs/WORKBOOK_v1.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="workbook_v1"
+          >
             <span>Workbook v1</span>
             <small>Adult-facing and joint-use workbook for reflection, preparation, experiment design, and review.</small>
           </a>
-          <a href="../docs/INTERPRETATION_GUIDE_v1.md">
+          <a
+            href="../docs/INTERPRETATION_GUIDE_v1.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="interpretation_guide_v1"
+          >
             <span>Interpretation guide v1</span>
             <small>Responsible qualitative interpretation for patterns and role-design hypotheses.</small>
           </a>
-          <a href="../docs/MANAGER_CONVERSATION_GUIDE_v1.md">
+          <a
+            href="../docs/MANAGER_CONVERSATION_GUIDE_v1.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="manager_conversation_guide_v1"
+          >
             <span>Manager conversation guide v1</span>
             <small>Employer-facing agendas, questions, templates, and boundary language.</small>
           </a>
-          <a href="../docs/V1_PACKAGE_INDEX.md">
+          <a
+            href="../docs/V1_PACKAGE_INDEX.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="v1_package_index"
+          >
             <span>V1 package index</span>
             <small>Map of the current package, use order, and remaining beta or launch gaps.</small>
           </a>
-          <a href="../docs/USER_GUIDE.md">
+          <a
+            href="../docs/USER_GUIDE.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="user_guide"
+          >
             <span>User guide</span>
             <small>Practical workflow guide for choosing and using the current artifacts.</small>
           </a>
-          <a href="../docs/BETA_DISCLOSURE_AND_CONSENT.md">
+          <a
+            href="../docs/BETA_DISCLOSURE_AND_CONSENT.md"
+            data-analytics-event="beta_disclosure_viewed"
+            data-analytics-label="beta_disclosure_and_consent"
+          >
             <span>Beta disclosure and consent</span>
             <small>Draft plain-language beta disclosure, consent wording, and disclosure safeguards.</small>
           </a>
-          <a href="../docs/RESPONSIBLE_USE_GUIDE.md">
+          <a
+            href="../docs/RESPONSIBLE_USE_GUIDE.md"
+            data-analytics-event="responsible_use_viewed"
+            data-analytics-label="responsible_use_guide"
+          >
             <span>Responsible-use guide</span>
             <small>Practical rules for adults, coaches, managers, HR, and employer pilots.</small>
           </a>
-          <a href="../docs/PRIVACY_PLACEHOLDER.md">
+          <a
+            href="../docs/PRIVACY_PLACEHOLDER.md"
+            data-analytics-event="privacy_placeholder_viewed"
+            data-analytics-label="privacy_placeholder"
+          >
             <span>Privacy placeholder</span>
             <small>Current static-prototype privacy posture and future beta intake checklist.</small>
           </a>
-          <a href="../docs/PRD_v1.md">
+          <a
+            href="../docs/PRD_v1.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="prd_v1"
+          >
             <span>PRD v1</span>
             <small>Product requirements, beta scope, business-model hypothesis, and launch positioning.</small>
           </a>
-          <a href="../docs/v1_audit.md">
+          <a
+            href="../docs/v1_audit.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="v1_audit"
+          >
             <span>V1 launch audit</span>
             <small>Readiness review, risks, responsible-use gaps, and commercialization notes.</small>
           </a>
-          <a href="../README.md">
+          <a
+            href="../README.md"
+            data-analytics-event="tool_pack_link_clicked"
+            data-analytics-label="repository_readme"
+          >
             <span>Repository README</span>
             <small>Overview, package structure, roadmap, and safety boundaries.</small>
           </a>
@@ -308,7 +362,12 @@
         </div>
       </section>
 
-      <section class="content-section sample-section section-reveal" id="sample" aria-labelledby="sample-title">
+      <section
+        class="content-section sample-section section-reveal"
+        id="sample"
+        aria-labelledby="sample-title"
+        data-analytics-view="sample_flow_viewed"
+      >
         <div class="section-intro">
           <p class="eyebrow">Static sample</p>
           <h2 id="sample-title">A 30-day role-design experiment, not an interactive product demo.</h2>
@@ -350,7 +409,12 @@
         </div>
       </section>
 
-      <section class="content-section section-reveal" id="pricing" aria-labelledby="pricing-title">
+      <section
+        class="content-section section-reveal"
+        id="pricing"
+        aria-labelledby="pricing-title"
+        data-analytics-view="pricing_section_viewed"
+      >
         <div class="section-intro">
           <p class="eyebrow">Pricing hypothesis</p>
           <h2 id="pricing-title">Possible tiers to validate during private beta.</h2>
@@ -398,7 +462,12 @@
             details, or identifiable employee information.
           </p>
         </div>
-        <form class="beta-form" data-prototype-form aria-describedby="form-note form-status">
+        <form
+          class="beta-form"
+          data-prototype-form
+          data-analytics-form="beta_form_attempted"
+          aria-describedby="form-note form-status"
+        >
           <div class="field-row">
             <label for="name">Name</label>
             <input id="name" name="name" autocomplete="name" type="text">
@@ -430,9 +499,21 @@
           <p id="form-note" class="form-note">
             Placeholder only: no backend, no storage, no mailing list integration.
             Read the
-            <a href="../docs/BETA_DISCLOSURE_AND_CONSENT.md">beta disclosure</a>,
-            <a href="../docs/RESPONSIBLE_USE_GUIDE.md">responsible-use guide</a>,
-            and <a href="../docs/PRIVACY_PLACEHOLDER.md">privacy placeholder</a>
+            <a
+              href="../docs/BETA_DISCLOSURE_AND_CONSENT.md"
+              data-analytics-event="beta_disclosure_viewed"
+              data-analytics-label="beta_disclosure_form_note"
+            >beta disclosure</a>,
+            <a
+              href="../docs/RESPONSIBLE_USE_GUIDE.md"
+              data-analytics-event="responsible_use_viewed"
+              data-analytics-label="responsible_use_form_note"
+            >responsible-use guide</a>,
+            and <a
+              href="../docs/PRIVACY_PLACEHOLDER.md"
+              data-analytics-event="privacy_placeholder_viewed"
+              data-analytics-label="privacy_placeholder_form_note"
+            >privacy placeholder</a>
             before any real beta intake.
           </p>
           <button class="button primary" type="submit">Request beta access</button>
@@ -527,13 +608,41 @@
         <p>Structured role-design support for sustainable contribution.</p>
       </div>
       <nav aria-label="Footer links">
-        <a href="../README.md">README</a>
-        <a href="../docs/WORKBOOK_v1.md">Workbook</a>
-        <a href="../docs/INTERPRETATION_GUIDE_v1.md">Interpretation guide</a>
-        <a href="../docs/MANAGER_CONVERSATION_GUIDE_v1.md">Manager guide</a>
-        <a href="../docs/BETA_DISCLOSURE_AND_CONSENT.md">Beta disclosure</a>
-        <a href="../docs/RESPONSIBLE_USE_GUIDE.md">Responsible use</a>
-        <a href="../docs/PRIVACY_PLACEHOLDER.md">Privacy placeholder</a>
+        <a
+          href="../README.md"
+          data-analytics-event="tool_pack_link_clicked"
+          data-analytics-label="footer_readme"
+        >README</a>
+        <a
+          href="../docs/WORKBOOK_v1.md"
+          data-analytics-event="tool_pack_link_clicked"
+          data-analytics-label="footer_workbook"
+        >Workbook</a>
+        <a
+          href="../docs/INTERPRETATION_GUIDE_v1.md"
+          data-analytics-event="tool_pack_link_clicked"
+          data-analytics-label="footer_interpretation_guide"
+        >Interpretation guide</a>
+        <a
+          href="../docs/MANAGER_CONVERSATION_GUIDE_v1.md"
+          data-analytics-event="tool_pack_link_clicked"
+          data-analytics-label="footer_manager_guide"
+        >Manager guide</a>
+        <a
+          href="../docs/BETA_DISCLOSURE_AND_CONSENT.md"
+          data-analytics-event="beta_disclosure_viewed"
+          data-analytics-label="footer_beta_disclosure"
+        >Beta disclosure</a>
+        <a
+          href="../docs/RESPONSIBLE_USE_GUIDE.md"
+          data-analytics-event="responsible_use_viewed"
+          data-analytics-label="footer_responsible_use"
+        >Responsible use</a>
+        <a
+          href="../docs/PRIVACY_PLACEHOLDER.md"
+          data-analytics-event="privacy_placeholder_viewed"
+          data-analytics-label="footer_privacy_placeholder"
+        >Privacy placeholder</a>
       </nav>
       <div class="footer-meta">
         <span>Contact: maintainer route coming later</span>

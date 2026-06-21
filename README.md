@@ -139,6 +139,8 @@ Current files:
   coaches, managers, HR partners, and employer pilots.
 - `docs/PRIVACY_PLACEHOLDER.md` - current static-prototype privacy posture and
   future beta intake privacy checklist.
+- `docs/ANALYTICS_AND_MEASUREMENT.md` - privacy-first beta measurement plan,
+  manual feedback workflow, and future event taxonomy.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
   future work.
 - `site/` - dependency-free static landing page prototype for the product,
@@ -255,6 +257,8 @@ Current status:
 - A lightweight static website prototype exists in `site/`.
 - No public deployment, payment flow, export package, legal/privacy review,
   facilitator guide, or worked example exists yet.
+- Analytics are currently limited to optional local no-op/debug
+  instrumentation; no external analytics provider is connected.
 
 Recommended next steps:
 
