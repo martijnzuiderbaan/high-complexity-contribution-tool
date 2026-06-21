@@ -129,10 +129,35 @@ Current files:
   conversation guide with agendas, questions, and templates.
 - `docs/V1_PACKAGE_INDEX.md` - index of the current v1 package and remaining
   beta/launch gaps.
+- `site/` - dependency-free static landing page prototype for the product,
+  with local links back to the Markdown tool pack.
 - `AGENTS.md` - repository instructions for future Codex runs.
 
-No application code, package manifest, build system, test suite, or runtime
-configuration exists in the repository today.
+No package manifest, build system, test suite, or runtime configuration exists
+in the repository today. The `site/` folder is static HTML, CSS, and JavaScript;
+it has no build step, backend, analytics provider, payment flow, or data
+storage.
+
+## Website Preview
+
+A lightweight static landing page now lives in `site/`.
+
+Open it directly:
+
+```bash
+open site/index.html
+```
+
+Or serve the repository root so the landing page links can reach the local
+Markdown docs:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://127.0.0.1:8000/site/`.
+
+See `site/README.md` for static-site limits and future integration notes.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 adult privacy and disclosure guide, employer responsible-use guide, synthetic
@@ -212,7 +237,8 @@ Current status:
 - Three v0.1 draft artifacts exist.
 - Audit, PRD, README, and user guide exist.
 - No v1 workbook release has been frozen.
-- No public website, payment flow, export package, legal/privacy review,
+- A lightweight static website prototype exists in `site/`.
+- No public deployment, payment flow, export package, legal/privacy review,
   facilitator guide, or worked example exists yet.
 
 Recommended next steps:
