@@ -135,6 +135,8 @@ Current files:
   manual beta intake, payment/access relationship, and privacy-safe feedback.
 - `docs/BETA_DISCLOSURE_AND_CONSENT.md` - plain-language beta disclosure,
   consent copy, disclosure boundaries, and maintainer checklist.
+- `docs/BETA_PLAN.md` - manual private beta operating plan, waves, intake,
+  onboarding, feedback, support, tracker, invitation copy, and exit criteria.
 - `docs/RESPONSIBLE_USE_GUIDE.md` - practical responsible-use rules for adults,
   coaches, managers, HR partners, and employer pilots.
 - `docs/PRIVACY_PLACEHOLDER.md` - current static-prototype privacy posture and
@@ -197,6 +199,8 @@ What exists now:
   conversation guide, and package index.
 - Draft beta disclosure, responsible-use, and privacy-placeholder materials for
   private beta preparation.
+- A private beta operating plan for manual intake, staged waves, feedback,
+  support, and launch readiness.
 
 What a coherent v1 package should contain:
 
