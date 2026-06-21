@@ -5,9 +5,9 @@ High-Complexity Contribution Tool / Instrument Complexiteit naar Bijdrage.
 
 The site introduces the tool, explains the responsible-use boundaries, links to
 the local Markdown tool pack, and provides a front-end-only beta interest form.
-It also links to the draft beta disclosure, responsible-use guide, privacy
-placeholder, private beta plan, security posture, and terms placeholder in
-`../docs/`.
+It also links to the demo flow, onboarding guide, synthetic examples, draft
+beta disclosure, responsible-use guide, privacy placeholder, private beta plan,
+security posture, and terms placeholder in `../docs/` and `../examples/`.
 
 ## Open Locally
 

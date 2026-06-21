@@ -134,6 +134,10 @@ Current files:
 - `docs/MARKETING.md` - marketing and launch messaging source document for
   beta copy, positioning, claims, outreach, website copy, and commercial
   messaging boundaries.
+- `docs/DEMO_FLOW.md` - guided fictional demo path for understanding the tool
+  without completing the full workbook.
+- `docs/ONBOARDING.md` - onboarding guide for individuals, manager-supported
+  use, coaches/facilitators, employer pilots, and product reviewers.
 - `docs/ACCESS_AND_ACCOUNTS_PLAN.md` - decision plan for v1 access, accounts,
   manual beta intake, payment/access relationship, and privacy-safe feedback.
 - `docs/BETA_DISCLOSURE_AND_CONSENT.md` - plain-language beta disclosure,
@@ -154,6 +158,8 @@ Current files:
   acceptable use, prohibited use, and future legal review needs.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
   future work.
+- `examples/` - synthetic, non-diagnostic examples for an adult workflow,
+  manager conversation, and 30-day role-design experiment.
 - `site/` - dependency-free static landing page prototype for the product,
   with local links back to the Markdown tool pack.
 - `AGENTS.md` - repository instructions for future Codex runs.
@@ -185,9 +191,9 @@ Then visit `http://127.0.0.1:8000/site/`.
 See `site/README.md` for static-site limits and future integration notes.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
-synthetic worked example, separate 30-day experiment tracker, review checklist,
-sample report, finished public launch materials, license or terms, and
-export-ready PDF or DOCX editions.
+separate 30-day experiment tracker, review checklist, sample report, finished
+public launch materials, license or terms, and export-ready PDF or DOCX
+editions.
 
 ## v1 Package Structure
 
@@ -206,6 +212,8 @@ What exists now:
   support, and launch readiness.
 - A marketing and launch messaging source document for beta copy, website copy,
   outreach, claims review, and commercial messaging boundaries.
+- A demo flow, onboarding guide, and three synthetic examples covering adult
+  preparation, manager conversation, and a 30-day experiment.
 
 What a coherent v1 package should contain:
 
@@ -270,8 +278,10 @@ Current status:
 - Audit, PRD, README, and user guide exist.
 - No v1 workbook release has been frozen.
 - A lightweight static website prototype exists in `site/`.
+- Demo, onboarding, and synthetic example materials now exist for product
+  walkthroughs and beta review.
 - No public deployment, payment flow, export package, legal/privacy review,
-  facilitator guide, or worked example exists yet.
+  facilitator guide, or export-ready package exists yet.
 - Analytics are currently limited to optional local no-op/debug
   instrumentation; no external analytics provider is connected.
 - Security and terms materials are placeholders for launch preparation, not
@@ -283,7 +293,6 @@ Recommended next steps:
 - Review the beta disclosure, privacy placeholder, and responsible-use guide
   before any real beta intake or employer pilot.
 - Create the facilitator guide.
-- Add one synthetic worked example.
 - Add a 30-day tracker and review template.
 - Decide the language strategy: English-first, Dutch-first, or fully bilingual
   `nl-en`.
