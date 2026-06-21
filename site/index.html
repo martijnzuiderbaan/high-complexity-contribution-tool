@@ -47,8 +47,8 @@
               class="button primary"
               href="#beta"
               data-analytics-event="primary_cta_clicked"
-              data-analytics-label="request_beta_access"
-            >Request beta access</a>
+              data-analytics-label="view_beta_placeholder"
+            >View beta placeholder</a>
             <a
               class="button secondary"
               href="#included"
@@ -455,7 +455,7 @@
       <section class="content-section beta-section section-reveal" id="beta" aria-labelledby="beta-title">
         <div class="section-intro">
           <p class="eyebrow">Beta access</p>
-          <h2 id="beta-title">Join the beta interest list.</h2>
+          <h2 id="beta-title">Beta interest list placeholder.</h2>
           <p>
             This prototype form does not submit yet: it stores nothing and sends
             nothing. Do not enter completed scans, health details, conflict
@@ -509,14 +509,19 @@
               data-analytics-event="responsible_use_viewed"
               data-analytics-label="responsible_use_form_note"
             >responsible-use guide</a>,
-            and <a
+            <a
               href="../docs/PRIVACY_PLACEHOLDER.md"
               data-analytics-event="privacy_placeholder_viewed"
               data-analytics-label="privacy_placeholder_form_note"
-            >privacy placeholder</a>
+            >privacy placeholder</a>,
+            and the <a
+              href="../docs/TERMS_AND_USE_PLACEHOLDER.md"
+              data-analytics-event="tool_pack_link_clicked"
+              data-analytics-label="terms_placeholder_form_note"
+            >terms placeholder</a>
             before any real beta intake.
           </p>
-          <button class="button primary" type="submit">Request beta access</button>
+          <button class="button primary" type="submit">Show prototype notice</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
@@ -643,11 +648,21 @@
           data-analytics-event="privacy_placeholder_viewed"
           data-analytics-label="footer_privacy_placeholder"
         >Privacy placeholder</a>
+        <a
+          href="../docs/SECURITY.md"
+          data-analytics-event="tool_pack_link_clicked"
+          data-analytics-label="footer_security"
+        >Security</a>
+        <a
+          href="../docs/TERMS_AND_USE_PLACEHOLDER.md"
+          data-analytics-event="tool_pack_link_clicked"
+          data-analytics-label="footer_terms_placeholder"
+        >Terms placeholder</a>
       </nav>
       <div class="footer-meta">
         <span>Contact: maintainer route coming later</span>
         <span>Static prototype: no live intake, tracking, accounts, or checkout</span>
-        <span>Terms: coming later</span>
+        <span>Terms are placeholder only; final legal text is not ready</span>
       </div>
     </footer>
   </body>

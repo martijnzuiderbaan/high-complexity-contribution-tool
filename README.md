@@ -141,6 +141,12 @@ Current files:
   future beta intake privacy checklist.
 - `docs/ANALYTICS_AND_MEASUREMENT.md` - privacy-first beta measurement plan,
   manual feedback workflow, and future event taxonomy.
+- `docs/SECURITY.md` - current static-prototype security posture, reporting
+  placeholder, and pre-launch security checklist.
+- `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` - review of current trust,
+  privacy/security, misuse, static-site, and launch-readiness risks.
+- `docs/TERMS_AND_USE_PLACEHOLDER.md` - plain-language placeholder for terms,
+  acceptable use, prohibited use, and future legal review needs.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
   future work.
 - `site/` - dependency-free static landing page prototype for the product,
@@ -259,6 +265,8 @@ Current status:
   facilitator guide, or worked example exists yet.
 - Analytics are currently limited to optional local no-op/debug
   instrumentation; no external analytics provider is connected.
+- Security and terms materials are placeholders for launch preparation, not
+  final legal, privacy, or production security assurance.
 
 Recommended next steps:
 
