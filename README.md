@@ -133,6 +133,12 @@ Current files:
   packaging, payment planning, and validation.
 - `docs/ACCESS_AND_ACCOUNTS_PLAN.md` - decision plan for v1 access, accounts,
   manual beta intake, payment/access relationship, and privacy-safe feedback.
+- `docs/BETA_DISCLOSURE_AND_CONSENT.md` - plain-language beta disclosure,
+  consent copy, disclosure boundaries, and maintainer checklist.
+- `docs/RESPONSIBLE_USE_GUIDE.md` - practical responsible-use rules for adults,
+  coaches, managers, HR partners, and employer pilots.
+- `docs/PRIVACY_PLACEHOLDER.md` - current static-prototype privacy posture and
+  future beta intake privacy checklist.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
   future work.
 - `site/` - dependency-free static landing page prototype for the product,
@@ -166,10 +172,9 @@ Then visit `http://127.0.0.1:8000/site/`.
 See `site/README.md` for static-site limits and future integration notes.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
-adult privacy and disclosure guide, employer responsible-use guide, synthetic
-worked example, separate 30-day experiment tracker, review checklist, sample
-report, website copy, launch materials, license or terms, and export-ready PDF
-or DOCX editions.
+synthetic worked example, separate 30-day experiment tracker, review checklist,
+sample report, launch materials, license or terms, and export-ready PDF or DOCX
+editions.
 
 ## v1 Package Structure
 
@@ -182,14 +187,18 @@ What exists now:
 - This README and user guide.
 - A first v1 core tool pack: workbook, interpretation guide, manager
   conversation guide, and package index.
+- Draft beta disclosure, responsible-use, and privacy-placeholder materials for
+  private beta preparation.
 
 What a coherent v1 package should contain:
 
 - v1 Adult Self-Scan workbook.
 - v1 Employer Role Scan workbook.
 - v1 Joint Conversation Canvas.
-- Adult privacy and disclosure guide.
-- Employer responsible-use guide.
+- Adult privacy and disclosure guide, with the current beta disclosure draft as
+  a starting point.
+- Employer responsible-use guide, with the current responsible-use draft as a
+  starting point.
 - Conversation guide for the joint session and 30-day review.
 - Facilitator guide with session flow, scripts, timing, and intervention
   points.
@@ -250,8 +259,8 @@ Current status:
 Recommended next steps:
 
 - Stabilize v1 names and terminology across the three core artifacts.
-- Create the adult privacy/disclosure guide.
-- Create the employer responsible-use guide.
+- Review the beta disclosure, privacy placeholder, and responsible-use guide
+  before any real beta intake or employer pilot.
 - Create the facilitator guide.
 - Add one synthetic worked example.
 - Add a 30-day tracker and review template.
