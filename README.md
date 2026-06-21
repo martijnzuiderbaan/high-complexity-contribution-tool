@@ -154,6 +154,8 @@ Current files:
   placeholder, and pre-launch security checklist.
 - `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` - review of current trust,
   privacy/security, misuse, static-site, and launch-readiness risks.
+- `docs/V1_LAUNCH_REVIEW.md` - multi-lens readiness review for internal
+  review, private beta, employer pilots, paid pilots, and public launch.
 - `docs/TERMS_AND_USE_PLACEHOLDER.md` - plain-language placeholder for terms,
   acceptable use, prohibited use, and future legal review needs.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
@@ -280,6 +282,8 @@ Current status:
 - A lightweight static website prototype exists in `site/`.
 - Demo, onboarding, and synthetic example materials now exist for product
   walkthroughs and beta review.
+- A multi-lens v1 launch readiness review exists in
+  `docs/V1_LAUNCH_REVIEW.md`.
 - No public deployment, payment flow, export package, legal/privacy review,
   facilitator guide, or export-ready package exists yet.
 - Analytics are currently limited to optional local no-op/debug
