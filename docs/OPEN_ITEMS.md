@@ -34,6 +34,11 @@ privacy, commercial, and responsible-use follow-up work.
 | OI-008 | 2026-06-21 | Step 6 | Review evidence balance so the tool does not lean too heavily on any single source or recent research document. | Stronger commercial claims require careful evidence balance and should not overstate support from one source. | Before stronger public claims | Open |
 | OI-009 | 2026-06-21 | Step 6 | Decide product name before public launch. | The current English and Dutch working names need a stable public naming strategy for website, downloads, pricing, and license language. | Before public launch materials | Open |
 | OI-010 | 2026-06-21 | Step 6 | Decide whether the first paid offer is individual, professional pack, employer pilot, or workshop-led. | The monetization plan recommends a professional/facilitator-centered route, but real beta evidence should confirm the first live paid offer. | Before payment implementation | Open |
+| OI-011 | 2026-06-21 | Step 7 | Decide manual beta intake workflow. | Private beta should qualify responsible use and route unsuitable requests before materials are sent. | Before real beta access | Open |
+| OI-012 | 2026-06-21 | Step 7 | Create consent/disclosure copy before collecting beta data. | Even minimal beta intake needs explicit purpose, consent, retention, deletion, and no-sensitive-content language. | Before real beta form integration | Open |
+| OI-013 | 2026-06-21 | Step 7 | Decide whether the first paid delivery is manual download, invoice, or hosted checkout. | The access model should match the first paid offer without prematurely adding accounts or backend infrastructure. | Before payment implementation | Open |
+| OI-014 | 2026-06-21 | Step 7 | Define minimal beta feedback storage process. | Feedback should capture product learning without storing completed scans, HR case details, or identifiable workplace stories. | Before structured beta follow-up | Open |
+| OI-015 | 2026-06-21 | Step 7 | Revisit accounts only after a beta or paid-pilot trigger is met. | Accounts should solve a proven delivery, entitlement, update, support, privacy, or organization-access problem rather than making the product look like SaaS. | After private beta or first paid pilots | Open |
 
 ## 3. Maintenance rule
 

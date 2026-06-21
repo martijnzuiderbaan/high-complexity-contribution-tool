@@ -131,6 +131,8 @@ Current files:
   beta/launch gaps.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
   packaging, payment planning, and validation.
+- `docs/ACCESS_AND_ACCOUNTS_PLAN.md` - decision plan for v1 access, accounts,
+  manual beta intake, payment/access relationship, and privacy-safe feedback.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
   future work.
 - `site/` - dependency-free static landing page prototype for the product,
