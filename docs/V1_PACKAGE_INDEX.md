@@ -33,6 +33,11 @@ system.
 | `docs/INTERPRETATION_GUIDE_v1.md` | Draft | Responsible qualitative interpretation guide for patterns, blockers, and role-design hypotheses |
 | `docs/MANAGER_CONVERSATION_GUIDE_v1.md` | Draft | Employer/manager-facing guide with agendas, questions, notes, action plan, and review template |
 | `docs/V1_PACKAGE_INDEX.md` | Draft | Index of current package, audience mapping, use order, and remaining gaps |
+| `CHANGELOG.md` | Draft | Meaningful product, documentation, release, safety, and packaging changes |
+| `docs/PRIVATE_BETA_RELEASE_NOTES.md` | Draft | Current private-beta release summary, status, included materials, entry criteria, and exit criteria |
+| `docs/ROADMAP.md` | Draft | Evidence-gated roadmap for private beta, facilitated beta, pilots, and later public launch candidate work |
+| `docs/LAUNCH_CHECKLIST.md` | Draft | Staged checklist for private beta, facilitated beta, employer pilot, paid pilot, and public launch readiness |
+| `docs/DOCUMENTATION_INDEX.md` | Draft | Navigable index for current package, planning docs, beta operations, website, examples, and legacy/reference materials |
 | `docs/ONBOARDING.md` | Draft | Current starting paths for individuals, manager-supported use, facilitated use, employer pilots, and reviewers |
 | `docs/DEMO_FLOW.md` | Draft | Guided fictional demo path for understanding the workflow without real participant data |
 | `docs/BETA_PLAN.md` | Draft | Manual private beta operating plan, waves, intake, onboarding, feedback, support, tracker, and exit criteria |
@@ -68,6 +73,8 @@ system.
 | File | Use when... | Main output |
 |---|---|---|
 | `README.md` | Someone needs the product overview and boundaries | Shared understanding of purpose, audience, workflow, and roadmap |
+| `docs/PRIVATE_BETA_RELEASE_NOTES.md` | Someone needs the current private-beta release status | Included materials, safe-use boundaries, review route, entry criteria, and exit criteria |
+| `docs/DOCUMENTATION_INDEX.md` | Someone needs navigable documentation paths | Current docs grouped by purpose and audience |
 | `docs/USER_GUIDE.md` | A user needs practical instructions for using the package | Clear flow from individual preparation to 30-day review |
 | `docs/V1_PACKAGE_INDEX.md` | A user or maintainer needs to understand the package contents | Artifact map and launch gap list |
 | `docs/ONBOARDING.md` | A beta user or reviewer needs the most current entry path | Starting routes for individual, manager-supported, facilitated, employer, and reviewer use |
@@ -103,6 +110,10 @@ system.
 |---|---|---|
 | `docs/v1_audit.md` | Reviewing launch readiness, risks, gaps, and commercialization direction | Audit findings and recommended scope |
 | `docs/PRD_v1.md` | Planning v1 product scope, launch, monetization, and future roadmap | Requirements and launch positioning |
+| `docs/ROADMAP.md` | Planning staged movement from private beta to later pilots | Evidence gates, non-goals, and decision gates |
+| `docs/LAUNCH_CHECKLIST.md` | Checking readiness for a specific stage | Private beta, facilitated beta, employer pilot, paid pilot, and public launch checklists |
+| `CHANGELOG.md` | Reviewing meaningful package changes | Release history and known limitations |
+| `docs/DOCUMENTATION_INDEX.md` | Maintaining documentation navigation | Source-of-truth notes and reading paths |
 | `docs/V1_LAUNCH_REVIEW.md` | Reviewing current launch readiness by stage | Private beta, employer pilot, paid pilot, and public launch blocker list |
 | `docs/PRIVATE_BETA_BLOCKER_FIXES.md` | Reviewing Step 15 private-beta blocker handling | Fix summary, unresolved items, and post-fix private beta status |
 | `AGENTS.md` | Making future repository changes | Content, privacy, and boundary rules |
@@ -216,9 +227,8 @@ Before larger or more facilitated beta waves, the package still needs:
 - Facilitator guide with session scripts, timing, and intervention points if
   the manager guide is not enough.
 - 30-day experiment tracker as a separate artifact or printable handout.
-- Review checklist for non-diagnostic boundaries, privacy, and responsible use.
-- Clear version history or changelog.
-- Content QA checklist for boundary language, terminology, and frontmatter.
+- Content QA checklist for non-diagnostic boundaries, privacy, terminology,
+  links, and frontmatter.
 - Decision on language strategy: English-first, Dutch-first, or fully bilingual
   `nl-en`.
 - Export review if PDF, DOCX, or printable editions are used.
@@ -231,7 +241,8 @@ should follow `docs/PRIVATE_BETA_RECORDS_SOP.md`.
 
 Before commercial launch, the package still needs:
 
-- Finalized v1 workbook package and release notes.
+- Finalized public/commercial workbook package and public/commercial release
+  notes.
 - Product terms of use and license language.
 - Privacy notice for website, downloads, purchases, feedback, and any services.
 - Employer responsible-use terms that explicitly prohibit hiring, selection,
@@ -259,8 +270,10 @@ proven unless that evidence actually exists and has been reviewed.
 | User need | Start here |
 |---|---|
 | "What is this product?" | `README.md` |
+| "What is the current private-beta release?" | `docs/PRIVATE_BETA_RELEASE_NOTES.md` |
+| "Where is the full documentation map?" | `docs/DOCUMENTATION_INDEX.md` |
 | "How do I use the package?" | `docs/USER_GUIDE.md` |
 | "I need the practical workbook." | `docs/WORKBOOK_v1.md` |
 | "I need to interpret patterns responsibly." | `docs/INTERPRETATION_GUIDE_v1.md` |
 | "I am a manager preparing the conversation." | `docs/MANAGER_CONVERSATION_GUIDE_v1.md` |
-| "I am planning the product roadmap." | `docs/PRD_v1.md` and `docs/v1_audit.md` |
+| "I am planning the product roadmap." | `docs/ROADMAP.md`, `docs/PRD_v1.md`, and `docs/v1_audit.md` |

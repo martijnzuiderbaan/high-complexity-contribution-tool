@@ -11,6 +11,10 @@ This is not an IQ test, giftedness diagnosis, hiring tool, promotion tool,
 performance rating, high-potential ranking, clinical assessment, burnout
 diagnosis, occupational-health instrument, or disability determination.
 
+Current release status: this repository is packaged for invite-only private
+beta review. It is not a public launch, paid product launch, employer rollout,
+production deployment, or validated assessment.
+
 ## What This Tool Is
 
 This repository contains a Markdown-first workbook prototype for shared
@@ -130,6 +134,15 @@ Current files:
   conversation guide with agendas, questions, and templates.
 - `docs/V1_PACKAGE_INDEX.md` - index of the current v1 package and remaining
   beta/launch gaps.
+- `CHANGELOG.md` - meaningful package and release changes.
+- `docs/PRIVATE_BETA_RELEASE_NOTES.md` - release notes for the invite-only
+  private-beta package.
+- `docs/ROADMAP.md` - staged, evidence-gated roadmap for beta, pilots, and
+  later launch candidates.
+- `docs/LAUNCH_CHECKLIST.md` - staged checklist for private beta, facilitated
+  beta, employer pilot, paid pilot, and public launch readiness.
+- `docs/DOCUMENTATION_INDEX.md` - navigable index of current, planning,
+  beta-operational, website, and legacy/reference docs.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
   packaging, payment planning, and commercial learning.
 - `docs/MARKETING.md` - marketing and launch messaging source document for
@@ -199,9 +212,9 @@ Then visit `http://127.0.0.1:8000/site/`.
 See `site/README.md` for static-site limits and future integration notes.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
-separate 30-day experiment tracker, review checklist, sample report, finished
-public launch materials, license or terms, and export-ready PDF or DOCX
-editions.
+separate 30-day experiment tracker, content QA checklist, sample report,
+finished public launch materials, final license or terms, and export-ready PDF
+or DOCX editions.
 
 ## v1 Package Structure
 
@@ -214,6 +227,8 @@ What exists now:
 - This README and user guide.
 - A first v1 core tool pack: workbook, interpretation guide, manager
   conversation guide, and package index.
+- A private-beta release package: changelog, release notes, roadmap, launch
+  checklist, and documentation index.
 - Draft beta disclosure, responsible-use, privacy-placeholder, security, and
   manual records materials for private beta preparation.
 - A private beta operating plan for manual intake, staged waves, feedback,
@@ -292,6 +307,9 @@ Current status:
   `docs/V1_LAUNCH_REVIEW.md`.
 - Private-beta blocker fixes are recorded in
   `docs/PRIVATE_BETA_BLOCKER_FIXES.md`.
+- Private-beta release package docs are recorded in `CHANGELOG.md`,
+  `docs/PRIVATE_BETA_RELEASE_NOTES.md`, `docs/ROADMAP.md`,
+  `docs/LAUNCH_CHECKLIST.md`, and `docs/DOCUMENTATION_INDEX.md`.
 - Private beta remains invite-only and manual: the static site has no intake
   fields, no backend, no storage, and no real submission.
 - No public deployment, payment flow, export package, legal/privacy review,

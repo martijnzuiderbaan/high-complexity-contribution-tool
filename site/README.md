@@ -8,7 +8,8 @@ the local Markdown tool pack, and provides an invite-only beta access panel
 with no input fields. It also links to the demo flow, onboarding guide,
 synthetic examples, draft beta disclosure, responsible-use guide, privacy
 placeholder, private beta plan, private beta records SOP, security posture, and
-terms placeholder in `../docs/` and `../examples/`.
+terms placeholder in `../docs/` and `../examples/`, plus the private beta
+release notes and documentation index created for the release package.
 
 ## Open Locally
 
@@ -40,9 +41,9 @@ Serving only the `site/` directory also renders the page, but links to
   `localStorage.setItem("hcctAnalyticsDebug", "1")`.
 - No checkout, payment, account, or license delivery flow exists.
 - Draft disclosure, responsible-use, privacy-placeholder, security, and terms
-  placeholder documents plus a private beta plan exist in `../docs/`; final
-  legal/privacy terms and production security assurance are still not
-  implemented.
+  placeholder documents plus private beta release package docs exist in
+  `../docs/` and the repository root; final legal/privacy terms and production
+  security assurance are still not implemented.
 
 ## To Connect Later
 
