@@ -129,6 +129,10 @@ Current files:
   conversation guide with agendas, questions, and templates.
 - `docs/V1_PACKAGE_INDEX.md` - index of the current v1 package and remaining
   beta/launch gaps.
+- `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
+  packaging, payment planning, and validation.
+- `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
+  future work.
 - `site/` - dependency-free static landing page prototype for the product,
   with local links back to the Markdown tool pack.
 - `AGENTS.md` - repository instructions for future Codex runs.
