@@ -44,6 +44,7 @@ privacy, commercial, and responsible-use follow-up work.
 | OI-018 | 2026-06-21 | Step 10 | Complete final legal, privacy, and security review before public, paid, or employer use. | The new security and terms documents are placeholders and reviews, not final legal text or production security assurance. | Before paid use, employer pilot, or public launch | Open |
 | OI-019 | 2026-06-21 | Step 10 | Run static-site link, accessibility, and deployment-path QA before public deployment. | The current site depends on local relative links and has not had automated accessibility or public-hosting checks. | Before public deployment | Open |
 | OI-020 | 2026-06-21 | Step 11 | Create written employer pilot scope/agreement before Wave 3 employer use. | The beta plan allows only very bounded employer conversations, but real employer pilots still need written scope, voluntary participation, documentation boundaries, stop conditions, and responsible-use acceptance. | Before Wave 3 employer or manager pilot | Open |
+| OI-021 | 2026-06-21 | Step 12 | Convert selected marketing source copy into controlled site, outreach, FAQ, and beta materials after readiness checks. | `docs/MARKETING.md` is source copy only; applying it publicly should wait for product name, contact route, beta intake process, public claims review, and relevant privacy/terms readiness. | Before site copy refresh, public outreach, or public launch materials | Open |
 
 ## 3. Maintenance rule
 

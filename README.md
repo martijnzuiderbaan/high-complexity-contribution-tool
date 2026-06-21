@@ -131,6 +131,9 @@ Current files:
   beta/launch gaps.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
   packaging, payment planning, and validation.
+- `docs/MARKETING.md` - marketing and launch messaging source document for
+  beta copy, positioning, claims, outreach, website copy, and commercial
+  messaging boundaries.
 - `docs/ACCESS_AND_ACCOUNTS_PLAN.md` - decision plan for v1 access, accounts,
   manual beta intake, payment/access relationship, and privacy-safe feedback.
 - `docs/BETA_DISCLOSURE_AND_CONSENT.md` - plain-language beta disclosure,
@@ -183,8 +186,8 @@ See `site/README.md` for static-site limits and future integration notes.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 synthetic worked example, separate 30-day experiment tracker, review checklist,
-sample report, launch materials, license or terms, and export-ready PDF or DOCX
-editions.
+sample report, finished public launch materials, license or terms, and
+export-ready PDF or DOCX editions.
 
 ## v1 Package Structure
 
@@ -201,6 +204,8 @@ What exists now:
   private beta preparation.
 - A private beta operating plan for manual intake, staged waves, feedback,
   support, and launch readiness.
+- A marketing and launch messaging source document for beta copy, website copy,
+  outreach, claims review, and commercial messaging boundaries.
 
 What a coherent v1 package should contain:
 
