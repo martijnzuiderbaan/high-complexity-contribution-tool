@@ -122,6 +122,13 @@ Current files:
 - `docs/v1_audit.md` - launch audit of the current content prototype.
 - `docs/PRD_v1.md` - product requirements and launch positioning for v1.
 - `docs/USER_GUIDE.md` - practical guide for using the current workbook flow.
+- `docs/WORKBOOK_v1.md` - adult-facing and joint-use v1 workbook.
+- `docs/INTERPRETATION_GUIDE_v1.md` - responsible qualitative interpretation
+  guide for patterns and role-design hypotheses.
+- `docs/MANAGER_CONVERSATION_GUIDE_v1.md` - employer/manager-facing
+  conversation guide with agendas, questions, and templates.
+- `docs/V1_PACKAGE_INDEX.md` - index of the current v1 package and remaining
+  beta/launch gaps.
 - `AGENTS.md` - repository instructions for future Codex runs.
 
 No application code, package manifest, build system, test suite, or runtime
@@ -129,9 +136,9 @@ configuration exists in the repository today.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 adult privacy and disclosure guide, employer responsible-use guide, synthetic
-worked example, 30-day experiment tracker, review checklist, sample report,
-website copy, launch materials, license or terms, and export-ready PDF or DOCX
-editions.
+worked example, separate 30-day experiment tracker, review checklist, sample
+report, website copy, launch materials, license or terms, and export-ready PDF
+or DOCX editions.
 
 ## v1 Package Structure
 
@@ -142,6 +149,8 @@ What exists now:
 - A v1 audit.
 - A v1 PRD and launch positioning document.
 - This README and user guide.
+- A first v1 core tool pack: workbook, interpretation guide, manager
+  conversation guide, and package index.
 
 What a coherent v1 package should contain:
 
