@@ -11,6 +11,12 @@ use: non-diagnostic self-reflection and role-design preparation
 
 # Adult Self-Scan v0.1
 
+> Legacy/reference note: this v0.1 artifact is retained for comparison and
+> source material. For private beta and current v1 onboarding, use
+> `docs/WORKBOOK_v1.md`, `docs/INTERPRETATION_GUIDE_v1.md`,
+> `docs/MANAGER_CONVERSATION_GUIDE_v1.md`, and
+> `docs/V1_PACKAGE_INDEX.md`.
+
 ## Purpose
 
 This self-scan helps a gifted, hoogbegaafde, or high-complexity adult prepare a grounded conversation about sustainable contribution at work.

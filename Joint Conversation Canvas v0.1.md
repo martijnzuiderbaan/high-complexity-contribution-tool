@@ -11,6 +11,12 @@ use: non-diagnostic shared role-design conversation
 
 # Joint Conversation Canvas v0.1
 
+> Legacy/reference note: this v0.1 artifact is retained for comparison and
+> source material. For private beta and current v1 onboarding, use
+> `docs/WORKBOOK_v1.md`, `docs/INTERPRETATION_GUIDE_v1.md`,
+> `docs/MANAGER_CONVERSATION_GUIDE_v1.md`, and
+> `docs/V1_PACKAGE_INDEX.md`.
+
 ## Purpose
 
 This canvas supports a structured conversation between a gifted, hoogbegaafde, or high-complexity adult and a manager, employer, HR partner, or coach.
@@ -208,4 +214,3 @@ Choose one.
 | Convert the experiment into a role agreement |  |  |
 | Escalate to HR, coach, occupational health, or another specialist route |  |  |
 | Conclude that the role cannot be redesigned enough |  |  |
-

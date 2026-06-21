@@ -20,6 +20,11 @@ databases, analytics providers, cookies, tracking scripts, live forms, or
 third-party services. It assumes beta interest, delivery, support, and feedback
 are handled manually.
 
+The operational records process for invite-only private beta is defined in
+`docs/PRIVATE_BETA_RECORDS_SOP.md`. Use that SOP for contact routes, tracker
+fields, consent logging, storage separation, retention, deletion, correction,
+weekly summaries, and accidental sensitive disclosure handling.
+
 ## 1. Purpose
 
 The private beta exists to learn whether the current workbook-first package is
@@ -83,6 +88,7 @@ Participants may use these artifacts:
 - `docs/USER_GUIDE.md`
 - `docs/V1_PACKAGE_INDEX.md`
 - `docs/BETA_DISCLOSURE_AND_CONSENT.md`
+- `docs/PRIVATE_BETA_RECORDS_SOP.md` for maintainer-side records handling.
 - `docs/RESPONSIBLE_USE_GUIDE.md`
 - `docs/PRIVACY_PLACEHOLDER.md`
 - `docs/SECURITY.md`
@@ -92,8 +98,8 @@ Participants may use these artifacts:
 
 Static, placeholder, or manual parts:
 
-- The site beta form is a placeholder only. It stores nothing, submits
-  nothing, and sends nothing.
+- The site beta area has no input fields. It stores nothing, submits nothing,
+  emails nothing, and sends nothing.
 - Analytics event names are local/no-op only. No provider is connected.
 - Privacy, security, and terms materials are draft placeholders.
 - Beta delivery is manual.
@@ -147,7 +153,7 @@ decline the beta use.
 
 | Wave | Goal | Participant type | Entry criteria | What to test | Exit criteria | Stop conditions |
 |---|---|---|---|---|---|---|
-| Wave 0: internal review | Confirm the package is safe enough to show to trusted outsiders. | Maintainer, trusted reviewer, or content reviewer. | All required draft docs exist; site copy says form does not submit; no live data collection. | Boundaries, broken links, confusing claims, missing onboarding text, tracker fields. | No obvious live-form, privacy, diagnosis, selection, or launch-readiness confusion remains. | Any copy implies diagnosis, validation, live intake, payment, analytics, or employer decision support. |
+| Wave 0: internal review | Confirm the package is bounded enough to show to trusted outsiders. | Maintainer, trusted reviewer, or content reviewer. | All required draft docs exist; site copy says the beta area has no input fields and does not submit; no live data collection. | Boundaries, broken links, confusing claims, missing onboarding text, tracker fields. | No obvious live-form, privacy, diagnosis, selection, or launch-readiness confusion remains. | Any copy implies diagnosis, validation, live intake, payment, analytics, or employer decision support. |
 | Wave 1: 3 to 5 trusted individual users | Test individual recognition, clarity, privacy, and usefulness. | Trusted adults and possibly one professional reviewer. | Participant accepts beta disclosure and agrees not to send sensitive content. | Problem framing, workbook clarity, disclosure boundaries, emotional safety, concrete next step. | At least 3 structured feedback responses; no unmanageable misuse or privacy issue. | Users seek diagnosis/proof, feel pushed to disclose, or cannot understand the boundaries. |
 | Wave 2: 5 to 10 coached or facilitated uses | Test whether a professional can use the materials responsibly. | Coaches, advisors, facilitators, HR partners in advisory role. | Wave 1 wording issues handled; facilitator accepts non-assessment boundaries. | Session flow, missing scripts, examples, handouts, boundary interventions, professional-pack value. | Several uses produce a concrete experiment or responsible pause; facilitator can use without author explanation. | Facilitators overclaim, collect too much personal detail, or need heavy custom support every time. |
 | Wave 3: 1 to 2 very bounded employer/manager conversations | Test employer-side language and governance under tight scope. | Manager/HR participant with voluntary adult involvement and preferably facilitation. | Written scope, voluntary participation, no adverse consequence, no HR decision use, documentation boundary. | Manager guide, role/context framing, adult agency, HR-file limits, stop conditions, review evidence. | Employer accepts constraints and a conversation can end in role-design action or responsible pause. | Any hiring, performance, ranking, discipline, support-entitlement, mandatory, or unsafe conflict pressure appears. |
@@ -158,10 +164,17 @@ wave shows clearer use, manageable risk, and concrete product learning.
 
 ## 6. Intake Workflow
 
-Interest should be expressed manually through a private contact route until a
-reviewed beta intake route exists. The static site form must remain a
-placeholder until privacy, consent, retention, deletion, and support handling
-are ready.
+Private beta interest is invite-only until a reviewed public intake route
+exists. Each invited participant must have a direct private contact route agreed
+in the invitation before materials are sent. If no direct route is agreed, do
+not invite the participant and do not collect beta feedback.
+
+The static site must not be used for intake. Its beta area has no input fields,
+no backend, no storage, no mailing-list integration, and no real submission.
+
+Use `docs/PRIVATE_BETA_RECORDS_SOP.md` for the contact record, product-learning
+tracker, consent log, retention, deletion, correction, and accidental
+disclosure process.
 
 Request only information needed to decide fit and follow up:
 
@@ -454,9 +467,10 @@ adults to disclose personal material.
 
 Manual support route:
 
-- Use the private contact channel already used for the beta until a monitored
-  public contact route exists.
-- Do not use the static site form for support.
+- Use the direct private contact route agreed in the invitation until a
+  monitored public contact route exists.
+- Do not use the static site for support, intake, privacy requests, or security
+  reports.
 - Do not ask participants to send completed workbook content.
 - Keep issue notes product-focused and redacted.
 
@@ -519,6 +533,10 @@ Response expectations:
 Use a lightweight manual tracker. A spreadsheet is enough. Do not build a
 database, account portal, CRM integration, or analytics pipeline for this
 stage.
+
+The operational tracker, contact record, consent log, retention rules, and
+accidental-disclosure handling are defined in
+`docs/PRIVATE_BETA_RECORDS_SOP.md`.
 
 Suggested columns:
 
@@ -774,13 +792,13 @@ Do not include sensitive participant stories in changelog entries.
 
 | Transition | Criteria |
 |---|---|
-| Move from internal review to beta | Required docs are linked; site form clearly says it does not submit; no live data collection exists; intake and feedback templates exist; stop conditions are written. |
+| Move from internal review to beta | Required docs are linked; site beta area has no input fields and clearly says it does not submit, store, email, or send anything; no live data collection exists; contact, intake, consent, feedback, deletion, and accidental-disclosure templates exist; stop conditions are written. |
 | Move from individual beta to facilitated beta | Wave 1 users recognize the problem, understand boundaries, and give product feedback without unmanageable sensitive disclosures. |
 | Move from facilitated beta to employer pilot | Facilitators can use the materials responsibly; manager language is concrete; privacy boundaries hold; a written employer pilot scope and stop process are ready. |
 | Move from free beta to paid pilot | A specific paid package has credible demand; delivery, support, terms, privacy, refund/license scope, and responsible-use acceptance can be handled manually. |
 | Move from private beta to public launch | Final privacy, terms, security/contact, support, link/accessibility QA, public claims review, and any vendor/data-flow review are complete; misuse and disclosure risks are manageable. |
 
-Do not move to public launch while the current form is still only a placeholder
+Do not move to public launch while beta access is still invite-only and manual
 unless the site makes that limitation unmistakable.
 
 ## 18. Beta Launch Checklist
@@ -790,18 +808,18 @@ Before inviting real beta participants, confirm:
 - [ ] Artifact readiness: core workbook, interpretation guide, manager guide,
   user guide, beta disclosure, responsible-use guide, privacy placeholder,
   security posture, terms placeholder, and beta plan are available.
-- [ ] Site wording: beta area clearly says the form does not submit, store, or
-  send anything.
-- [ ] Contact route: manual beta contact route is known to invited
-  participants.
+- [ ] Site wording: beta area has no input fields and clearly says it does not
+  submit, store, email, or send anything.
+- [ ] Contact route: direct private beta contact route is known to invited
+  participants and recorded outside the repository.
 - [ ] Disclosure and consent: beta acknowledgement wording is ready.
 - [ ] Privacy placeholder: current data posture and no-sensitive-content rules
   are visible.
 - [ ] Terms placeholder: acceptable and prohibited uses are visible.
 - [ ] Responsible-use guide: adult, coach, manager, HR, and employer rules are
   visible.
-- [ ] Manual tracker: participant status can be recorded without sensitive
-  content.
+- [ ] Manual tracker: participant status, consent, deletion/correction status,
+  and product-learning notes can be recorded without sensitive content.
 - [ ] Feedback questions: product-focused question bank is ready.
 - [ ] Support process: issue and misuse concern templates are ready.
 - [ ] Weekly review cadence: a regular review time is set.

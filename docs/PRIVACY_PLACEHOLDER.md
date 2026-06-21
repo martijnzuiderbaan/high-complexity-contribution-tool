@@ -42,7 +42,7 @@ The current prototype is static and local.
 Current posture:
 
 - Static site.
-- Front-end-only beta form that does not submit.
+- Static beta access panel with no input fields and no submission.
 - Local/static Markdown documents.
 - No accounts.
 - No analytics provider.
@@ -61,15 +61,14 @@ service or live intake system.
 The repository and static site do not collect data unless a user manually
 contacts the maintainer or edits files locally.
 
-Current static form behavior:
+Current static beta page behavior:
 
-- A user can type into the visible beta form.
-- The form does not send the content anywhere.
-- The form does not write to a backend.
-- The form does not create an email, mailing-list record, database row, account,
+- The beta access area has no input fields.
+- It does not send content anywhere.
+- It does not write to a backend.
+- It does not create an email, mailing-list record, database row, account,
   analytics event, or payment record.
-- Any typed content stays in the browser session and is not collected by the
-  repository/site.
+- The repository/site does not collect beta interest or support requests.
 
 Local document behavior:
 
@@ -106,6 +105,12 @@ instead.
 ## 5. Future Beta Intake Data
 
 Future beta intake should stay minimal and purpose-bound.
+
+Invite-only private beta records are handled manually under
+`docs/PRIVATE_BETA_RECORDS_SOP.md`. That SOP defines the direct contact route,
+contact record, product-learning tracker, consent log, retention, deletion,
+correction, and accidental-disclosure process. Do not use the static site for
+intake.
 
 Suggested minimal fields:
 
@@ -206,6 +211,8 @@ Before real deployment or live data collection, prepare:
 - Retention and deletion process.
 - Security review.
 - Consent and disclosure wording for beta intake.
+- Manual beta records SOP if private beta is still handled without a reviewed
+  public intake route.
 - Process for accidental sensitive disclosures.
 - Process for quote/testimonial permission.
 - Review of payment, email, analytics, hosting, form, and storage providers if

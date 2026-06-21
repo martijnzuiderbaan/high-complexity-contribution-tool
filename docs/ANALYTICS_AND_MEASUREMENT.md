@@ -63,14 +63,14 @@ back to employers.
 - No workbook-content analytics: do not collect completed scans, free-text
   workbook answers, personal examples, or manager notes as analytics events.
 - Human review stays central: metrics can guide product decisions, but cannot
-  certify safety, fit, validation, diagnosis, or employment outcomes.
+  certify responsible fit, validation, diagnosis, or employment outcomes.
 
 ## 3. Current Prototype State
 
 Current state:
 
 - Static website.
-- Front-end-only beta form.
+- Static beta access panel with no input fields.
 - No backend.
 - No accounts.
 - No analytics provider.
@@ -83,9 +83,9 @@ Current state:
 - No automated scoring, ranking, interpretation, recommendation, or employee
   decision workflow.
 
-The current beta form can be typed into, but it does not submit, store, email,
-or persist anything. Any real beta interest must be handled manually until a
-privacy-reviewed intake process exists.
+The current beta access panel has no input fields and does not submit, store,
+email, or persist anything. Any real beta interest must be handled manually
+until a privacy-reviewed intake process exists.
 
 ## 4. Core Questions to Answer in Beta
 
@@ -120,7 +120,7 @@ measurement is enough for the current stage.
 | Metric | Definition | Why it matters | How to measure manually now | How to measure later if tooling is added | What not to measure |
 |---|---|---|---|---|---|
 | Awareness metric | Number and source pattern of qualified people who recognize the problem and ask to learn more. | Shows whether the framing attracts the right people before paid infrastructure is built. | Keep a weekly count of qualified conversations, inbound messages, beta requests, and stated audience paths. | Aggregate landing page views, source category, audience path clicks, and beta CTA clicks with no personal identifiers. | Do not track individual browsing histories, employee identities, employer employee lists, or sensitive use contexts. |
-| Activation metric | User reaches a concrete next step: opens the tool pack, requests beta access, or can name the artifact they would use first. | Shows whether interest converts into practical engagement. | Ask beta leads which artifact they opened or would use first; record only category-level answers. | Track aggregate safe events such as tool pack link clicked, workbook opened/downloaded, or beta form attempted. | Do not track field contents, completed scan sections, time spent on personal prompts, or individual employee completion. |
+| Activation metric | User reaches a concrete next step: opens the tool pack, requests beta access, or can name the artifact they would use first. | Shows whether interest converts into practical engagement. | Ask beta leads which artifact they opened or would use first; record only category-level answers. | Track aggregate events such as tool pack link clicked, workbook opened/downloaded, or a future reviewed beta request event. | Do not track field contents, completed scan sections, time spent on personal prompts, or individual employee completion. |
 | Completion metric | User completes enough of the relevant artifact to produce a shareable summary, manager preparation, session plan, or reviewable experiment. | Shows whether materials are usable beyond curiosity. | Ask for self-report or facilitator report: completed enough, got stuck, paused, or not used. | Use voluntary feedback forms with category answers; avoid storing workbook content. | Do not collect completed workbooks, private notes, raw examples, or HR case narratives. |
 | Conversation-use metric | A real or realistic adult-manager, coach-client, HR, or facilitated conversation is run using the materials. | The product value depends on safer conversations, not just downloads. | Count reported conversations by audience path and facilitation type; summarize barriers. | Track optional feedback_received events and aggregate session-type categories only. | Do not monitor employees, record conversations, or send employer reports about individual participation. |
 | Role-design experiment metric | Conversation ends in one bounded 30-day experiment or a responsible decision to pause, narrow, escalate, or stop. | This is the core workflow outcome. | Ask whether the output was experiment, pause/escalate, unclear, or no output; capture redacted reason categories. | Add optional post-use feedback categories for experiment_created, paused, adjusted, or stopped. | Do not judge performance, productivity, health, capability, giftedness, or employee value. |
@@ -145,8 +145,8 @@ included in event payloads.
 | `primary_cta_clicked` | Primary CTA such as beta access is clicked. | See whether the main offer is understandable. | CTA label, destination category. | Name, email, role text, intended-use text, personal context. | Click only; no form values. | Local no-op/debug only. |
 | `secondary_cta_clicked` | Secondary CTA such as tool-pack navigation is clicked. | Compare beta interest with education/tool-pack interest. | CTA label, destination category. | Personal identifiers or completed workbook data. | Aggregate navigation signal only. | Local no-op/debug only. |
 | `tool_pack_link_clicked` | Link to workbook, guide, package index, README, audit, or PRD is clicked. | Learn which artifacts draw interest. | Artifact label, artifact type. | User identity, file contents, completed templates. | Artifact interest only; not completion. | Local no-op/debug only. |
-| `beta_form_started` | User focuses or starts the beta form. | Later proxy for form intent if needed. | Form name, audience path category only if selected and consented later. | Field values, keystrokes, text contents, email address, name. | Avoid for now because focus tracking can feel invasive. | Planned only; not implemented. |
-| `beta_form_attempted` | Placeholder beta form is submitted. | Understand beta request intent once a real process exists. | Form name, submit action category. | Name, email, role value, intended-use text, hidden metadata. | Current form still sends nothing. | Local no-op/debug only. |
+| `beta_request_started` | Future reviewed beta intake route is started. | Later proxy for request intent if a real process exists. | Intake route name and audience path category only if selected and consented later. | Field values, keystrokes, text contents, email address, name. | Avoid for now because focus tracking can feel invasive. | Planned only; not implemented. |
+| `beta_request_attempted` | Future reviewed beta request is submitted. | Understand beta request intent once a real process exists. | Intake route name and submit action category. | Name, email, role value, intended-use text, hidden metadata. | Not present in the current static site. | Planned only; not implemented. |
 | `beta_disclosure_viewed` | Beta disclosure link is clicked. | See whether users review beta boundaries. | Document label. | Reader identity, consent status, personal context. | Viewing is not consent. | Local no-op/debug only. |
 | `privacy_placeholder_viewed` | Privacy placeholder link is clicked. | See whether users seek data-handling information. | Document label. | Name, email, employer, employee details. | Viewing is not a privacy-policy acceptance. | Local no-op/debug only. |
 | `responsible_use_viewed` | Responsible-use guide link is clicked. | See whether users review safe-use boundaries. | Document label. | Employee identity, manager identity, case details. | Viewing does not authorize employer use. | Local no-op/debug only. |

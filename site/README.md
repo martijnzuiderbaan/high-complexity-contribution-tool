@@ -4,10 +4,11 @@ This folder contains a lightweight commercial landing page for the
 High-Complexity Contribution Tool / Instrument Complexiteit naar Bijdrage.
 
 The site introduces the tool, explains the responsible-use boundaries, links to
-the local Markdown tool pack, and provides a front-end-only beta interest form.
-It also links to the demo flow, onboarding guide, synthetic examples, draft
-beta disclosure, responsible-use guide, privacy placeholder, private beta plan,
-security posture, and terms placeholder in `../docs/` and `../examples/`.
+the local Markdown tool pack, and provides an invite-only beta access panel
+with no input fields. It also links to the demo flow, onboarding guide,
+synthetic examples, draft beta disclosure, responsible-use guide, privacy
+placeholder, private beta plan, private beta records SOP, security posture, and
+terms placeholder in `../docs/` and `../examples/`.
 
 ## Open Locally
 
@@ -30,7 +31,8 @@ Serving only the `site/` directory also renders the page, but links to
 ## Static or Mock Only
 
 - No backend exists.
-- The beta form does not submit, store, email, or persist anything.
+- The beta access panel has no input fields and does not submit, store, email,
+  or persist anything.
 - No analytics provider is connected.
 - `script.js` includes optional provider-agnostic no-op analytics events for
   local debugging only. They log to the console only when explicitly enabled
@@ -45,7 +47,7 @@ Serving only the `site/` directory also renders the page, but links to
 ## To Connect Later
 
 - Add privacy-reviewed beta email capture with explicit consent and retention
-  rules.
+  rules only after the manual invite-only beta process is no longer enough.
 - Follow `../docs/BETA_PLAN.md` for manual beta intake, feedback, support, and
   wave progression.
 - Replace draft privacy/disclosure/security/terms copy before public launch.

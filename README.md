@@ -3,8 +3,8 @@
 Also named **Instrument Complexiteit naar Bijdrage**.
 
 The High-Complexity Contribution Tool helps high-complexity adults, managers,
-HR partners, and facilitators turn vague role-fit tension into a safe, concrete
-30-day work experiment. It is practical, employer-friendly, and focused on
+HR partners, and facilitators turn vague role-fit tension into a bounded,
+concrete 30-day work experiment. It is practical, employer-friendly, and focused on
 sustainable contribution without diagnosis, scoring, or HR ranking.
 
 This is not an IQ test, giftedness diagnosis, hiring tool, promotion tool,
@@ -114,11 +114,12 @@ autonomy, or role design into a smaller testable change.
 
 Current files:
 
-- `Adult Self-Scan v0.1.md` - private adult reflection and disclosure planning.
-- `Employer Role Scan v0.1.md` - manager, employer, HR, or coach role-context
-  scan.
-- `Joint Conversation Canvas v0.1.md` - shared conversation canvas for a
-  bounded 30-day work experiment.
+- `Adult Self-Scan v0.1.md` - legacy/reference private adult reflection and
+  disclosure planning artifact.
+- `Employer Role Scan v0.1.md` - legacy/reference manager, employer, HR, or
+  coach role-context scan artifact.
+- `Joint Conversation Canvas v0.1.md` - legacy/reference shared conversation
+  canvas for a bounded 30-day work experiment.
 - `docs/v1_audit.md` - launch audit of the current content prototype.
 - `docs/PRD_v1.md` - product requirements and launch positioning for v1.
 - `docs/USER_GUIDE.md` - practical guide for using the current workbook flow.
@@ -130,7 +131,7 @@ Current files:
 - `docs/V1_PACKAGE_INDEX.md` - index of the current v1 package and remaining
   beta/launch gaps.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
-  packaging, payment planning, and validation.
+  packaging, payment planning, and commercial learning.
 - `docs/MARKETING.md` - marketing and launch messaging source document for
   beta copy, positioning, claims, outreach, website copy, and commercial
   messaging boundaries.
@@ -144,6 +145,9 @@ Current files:
   consent copy, disclosure boundaries, and maintainer checklist.
 - `docs/BETA_PLAN.md` - manual private beta operating plan, waves, intake,
   onboarding, feedback, support, tracker, invitation copy, and exit criteria.
+- `docs/PRIVATE_BETA_RECORDS_SOP.md` - invite-only private beta contact,
+  records, consent, feedback, retention, deletion, correction, and accidental
+  disclosure process.
 - `docs/RESPONSIBLE_USE_GUIDE.md` - practical responsible-use rules for adults,
   coaches, managers, HR partners, and employer pilots.
 - `docs/PRIVACY_PLACEHOLDER.md` - current static-prototype privacy posture and
@@ -156,6 +160,8 @@ Current files:
   privacy/security, misuse, static-site, and launch-readiness risks.
 - `docs/V1_LAUNCH_REVIEW.md` - multi-lens readiness review for internal
   review, private beta, employer pilots, paid pilots, and public launch.
+- `docs/PRIVATE_BETA_BLOCKER_FIXES.md` - Step 15 record of private-beta blocker
+  fixes and remaining readiness status.
 - `docs/TERMS_AND_USE_PLACEHOLDER.md` - plain-language placeholder for terms,
   acceptable use, prohibited use, and future legal review needs.
 - `docs/OPEN_ITEMS.md` - persistent backlog for unresolved recommendations and
@@ -163,7 +169,7 @@ Current files:
 - `examples/` - synthetic, non-diagnostic examples for an adult workflow,
   manager conversation, and 30-day role-design experiment.
 - `site/` - dependency-free static landing page prototype for the product,
-  with local links back to the Markdown tool pack.
+  with local links back to the Markdown tool pack and no intake fields.
 - `AGENTS.md` - repository instructions for future Codex runs.
 
 No package manifest, build system, test suite, or runtime configuration exists
@@ -201,15 +207,15 @@ editions.
 
 What exists now:
 
-- Three draft v0.1 Markdown artifacts covering adult reflection, employer
-  role-context scanning, and a joint conversation canvas.
+- Three legacy/reference v0.1 Markdown artifacts covering adult reflection,
+  employer role-context scanning, and a joint conversation canvas.
 - A v1 audit.
 - A v1 PRD and launch positioning document.
 - This README and user guide.
 - A first v1 core tool pack: workbook, interpretation guide, manager
   conversation guide, and package index.
-- Draft beta disclosure, responsible-use, and privacy-placeholder materials for
-  private beta preparation.
+- Draft beta disclosure, responsible-use, privacy-placeholder, security, and
+  manual records materials for private beta preparation.
 - A private beta operating plan for manual intake, staged waves, feedback,
   support, and launch readiness.
 - A marketing and launch messaging source document for beta copy, website copy,
@@ -276,7 +282,7 @@ health, or performance.
 Current status:
 
 - Markdown-first content prototype.
-- Three v0.1 draft artifacts exist.
+- Three legacy/reference v0.1 draft artifacts exist.
 - Audit, PRD, README, and user guide exist.
 - No v1 workbook release has been frozen.
 - A lightweight static website prototype exists in `site/`.
@@ -284,6 +290,10 @@ Current status:
   walkthroughs and beta review.
 - A multi-lens v1 launch readiness review exists in
   `docs/V1_LAUNCH_REVIEW.md`.
+- Private-beta blocker fixes are recorded in
+  `docs/PRIVATE_BETA_BLOCKER_FIXES.md`.
+- Private beta remains invite-only and manual: the static site has no intake
+  fields, no backend, no storage, and no real submission.
 - No public deployment, payment flow, export package, legal/privacy review,
   facilitator guide, or export-ready package exists yet.
 - Analytics are currently limited to optional local no-op/debug

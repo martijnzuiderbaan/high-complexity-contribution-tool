@@ -49,17 +49,16 @@ Current state:
 - No payments.
 - No database.
 - No external analytics provider.
-- No submitted beta form.
+- No submitted beta form or site intake fields.
 - No file upload.
 - No email capture provider.
 - No third-party scripts or services in the site.
 - Local-only/no-op instrumentation where analytics event names are present.
 
-The beta interest form in `site/index.html` can be typed into, but the
-JavaScript prevents submission and does not send field values anywhere. The
-current analytics helper in `site/script.js` exposes local no-op/debug events
-only. It does not call `fetch`, `XMLHttpRequest`, `sendBeacon`, cookies, or an
-external provider.
+The beta area in `site/index.html` has no input fields, no backend, no storage,
+no mailing-list integration, and no real submission. The current analytics
+helper in `site/script.js` exposes local no-op/debug events only. It does not
+call `fetch`, `XMLHttpRequest`, `sendBeacon`, cookies, or an external provider.
 
 ## 3. Supported Responsible Security Practices
 
@@ -88,7 +87,8 @@ What the current repository/site handles:
 
 - Blank Markdown artifacts and planning documents.
 - Static landing-page HTML, CSS, and JavaScript.
-- Local browser interaction with a no-submit prototype form.
+- Local browser interaction with a no-submit beta access panel that has no
+  input fields.
 - Optional local analytics debug logging if a user explicitly enables it.
 
 What the current repository/site does not handle:
@@ -135,8 +135,9 @@ Known limitations:
   been performed.
 - No incident response process exists yet.
 - No access-control model exists because there is no account system.
-- No vulnerability disclosure process exists beyond the placeholder contact
-  route below.
+- No public vulnerability disclosure process exists yet. Invite-only beta issue
+  reporting uses the direct private route defined in the invitation and in
+  `docs/PRIVATE_BETA_RECORDS_SOP.md`.
 - No automated dependency scanning exists because there is no dependency
   manifest.
 - No automated link, accessibility, or content-boundary checks exist yet.
@@ -147,10 +148,14 @@ pilots, or production-like deployment.
 
 ## 6. Reporting Issues
 
-Placeholder contact route:
+Invite-only private beta route:
 
-> Contact route coming later. Until then, report issues directly to the
-> maintainer through the private channel already used for this project.
+> Report issues through the direct private route specified in the beta
+> invitation. If no direct private route has been agreed, do not send issue
+> details; the contact route must be set before beta materials are sent.
+
+A monitored public support/security/privacy route is still required before
+public launch, paid use, employer pilots, or production-like deployment.
 
 Include:
 
@@ -179,6 +184,8 @@ Do not include:
 - Decide where beta records are stored and who can access them.
 - Define a response for unsuitable use requests.
 - Define a process for accidental sensitive disclosures.
+- Use `docs/PRIVATE_BETA_RECORDS_SOP.md` for manual contact, consent, tracker,
+  retention, deletion, correction, and accidental-disclosure handling.
 - Confirm completed scans are not requested.
 - Confirm beta disclosure, privacy, responsible-use, terms, and security pages
   are linked.

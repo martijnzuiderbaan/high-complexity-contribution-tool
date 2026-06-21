@@ -84,9 +84,9 @@ before infrastructure:
 No beta capture should collect completed workbook responses, health details,
 conflict details, HR case details, or identifiable employee information.
 
-### What must be proven before scaling
+### What must be learned before scaling
 
-Before scaling, prove:
+Before scaling, learn:
 
 - Users understand that the tool is non-diagnostic and not for HR decisions.
 - Adults can use the workbook without oversharing private information.
@@ -108,7 +108,7 @@ Before scaling, prove:
 
 ## 2. Recommended initial business model
 
-Primary model: **facilitated professional pack, validated through founder-led
+Primary model: **facilitated professional pack, tested through founder-led
 early use**.
 
 This is a focused hybrid model. The paid center should be a professional pack
@@ -131,7 +131,7 @@ Why this model fits:
   anonymous downloads alone.
 - Commercial realism: professional packs, workshops, and pilots can reach EUR
   1k to EUR 5k revenue faster than low-price individual downloads, without
-  pretending the product is validated.
+  pretending beta learning is validation.
 
 Why not make other models primary yet:
 
@@ -188,7 +188,7 @@ Do not target:
 - Legal, clinical, occupational-health, disability, or formal accommodation use
   cases as the primary buyer route.
 - Large enterprises wanting standardized employee rollout before the tool has
-  been validated with controlled pilots.
+  been tested with controlled pilots.
 - Users in adversarial, disciplinary, unsafe, or legally sensitive contexts
   without appropriate specialist support.
 
@@ -198,7 +198,7 @@ These are early hypotheses for validation. They are not live offers.
 
 | Tier | Target buyer | Included artifacts or service | Price hypothesis | Usage limits | Problem it solves | Conversion trigger | Risks or objections |
 |---|---|---|---:|---|---|---|---|
-| Free preview | Adults, managers, coaches, HR partners | Landing page, short overview, sample pages, mini-canvas, responsible-use note, FAQ, beta interest form | EUR 0 | Preview and personal evaluation only; no commercial facilitation license | Helps people decide whether the tool is relevant and safe enough to explore | Visitor wants the checklist, sample pages, or beta update | Too much free material may reduce paid conversion; too little may not create trust |
+| Free preview | Adults, managers, coaches, HR partners | Landing page, short overview, sample pages, mini-canvas, responsible-use note, FAQ, invite-only beta route | EUR 0 | Preview and personal evaluation only; no commercial facilitation license | Helps people decide whether the tool is relevant and bounded enough to explore | Visitor wants the checklist, sample pages, or beta update | Too much free material may reduce paid conversion; too little may not create trust |
 | Individual workbook | Adult end user, possibly a manager preparing one conversation | Workbook, adult reflection path, disclosure prompts, joint canvas, 30-day tracker, review template; privacy/disclosure guide once created | EUR 39-79 one-time; beta test EUR 29-49 | One adult or one work situation; no commercial use; no employer rollout | Helps an adult prepare a safer role-fit conversation without needing an app | Free user wants a complete private preparation flow or a 30-day experiment template | May be too sensitive without facilitation; buyers may expect validation or diagnosis |
 | Professional/facilitator pack | Coach, career advisor, HR partner, facilitator, people-development professional | Full tool pack, interpretation guide, manager guide, facilitator-ready scripts, handouts, synthetic examples, responsible-use checklist, update access | EUR 249-499 early annual license, or EUR 299-699 one-time early v1 license | One named professional; limited client/session use, for example 10-25 uses during beta; no resale or internal employer rollout | Saves professional preparation time and gives a responsible session structure | Coach or HR partner has a real client/session and needs reusable materials | Professionals may ask for certification, supervision, liability coverage, or stronger evidence |
 | Employer/team pack | Small employer, HR team, manager group, leadership team | Limited pilot license, manager guide, responsible-use onboarding, workshop materials, internal use boundaries, feedback session | EUR 1,500-4,500 per pilot | One team or department, limited time window, limited participant count, facilitated use recommended | Helps a team test role/context changes without turning the tool into assessment | Employer has retention, role-fit, underuse, overload, or conflict-prevention need | Misuse risk, privacy concerns, HR/legal review, demand for standardization too early |
@@ -217,7 +217,8 @@ These are early hypotheses for validation. They are not live offers.
 - Sample pages that show the non-diagnostic workflow.
 - FAQ for giftedness labels, privacy, employer misuse, burnout, accommodation,
   and unsafe contexts.
-- Beta interest form with minimal, non-sensitive fields.
+- Invite-only beta route now; future beta interest form only after privacy
+  review, consent, retention, and deletion handling are ready.
 
 Free material should create trust and prevent misuse. It should not collect
 completed scans.
@@ -247,7 +248,7 @@ completed scans.
 Facilitation does not make the tool clinical, legal, or occupational-health
 advice. It simply helps keep the role-design conversation bounded.
 
-### What should not be sold until validated
+### What should not be sold until tested
 
 - Broad employer self-serve licenses.
 - Certification programs.
@@ -352,7 +353,7 @@ and support workflow are ready.
 
 Likely Stripe products:
 
-- Free preview: no paid product; email/beta form only.
+- Free preview: no paid product; invite-only beta route for now.
 - Individual workbook: one-time product, likely EUR 39-79.
 - Professional/facilitator pack: annual subscription or one-time early license,
   likely EUR 249-499 annual or EUR 299-699 early one-time.
@@ -397,7 +398,7 @@ Manual payment is appropriate during early beta:
 - Send download links only after responsible-use terms are accepted.
 
 Manual payment is slower, but safer while the offer and boundaries are still
-being validated.
+being tested.
 
 ### Refund and cancellation considerations
 
@@ -524,8 +525,8 @@ Avoid promising:
 
 ### First 10 beta users
 
-Goal: prove that the positioning attracts the right users and that the beta
-screen can exclude unsafe or unsuitable uses.
+Goal: test whether the positioning attracts the right users and whether the
+beta screen can exclude unsafe or unsuitable uses.
 
 Evidence to collect:
 
@@ -537,7 +538,7 @@ Evidence to collect:
 
 ### First 3 paid facilitated uses
 
-Goal: prove that founder-led sessions create useful experiments and reveal
+Goal: test whether founder-led sessions create useful experiments and reveal
 where facilitation materials need strengthening.
 
 Success signal:
@@ -609,7 +610,7 @@ Learning goal:
 | Support burden grows | Custom questions can overtake product work | Create FAQ, intake routing, templates, support scope, and escalation/referral language |
 | Data/privacy concerns | Completed scans can include sensitive personal and workplace information | Keep product local/download-first; collect minimal lead/payment data; do not collect completed scans; add privacy/terms before launch |
 
-## 12. Commercial validation plan
+## 12. Commercial learning plan
 
 ### What needs to be tested before building payments
 

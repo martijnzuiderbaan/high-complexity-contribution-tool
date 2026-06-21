@@ -35,21 +35,37 @@ decide employment outcomes.
 
 ## 2. Current Artifacts
 
-Use the files in this order when possible:
+Use the v1 files in this order when possible:
 
 | File | Primary user | Purpose | Output |
 |---|---|---|---|
-| `Adult Self-Scan v0.1.md` | Adult | Private reflection and disclosure planning | Shareable conversation summary, if safe |
-| `Employer Role Scan v0.1.md` | Manager, employer, HR, coach, facilitator | Role and context scan | Role-design output before joint conversation |
-| `Joint Conversation Canvas v0.1.md` | Adult plus manager/employer/HR/facilitator | Shared role-design conversation | One 30-day work experiment and review path |
+| `docs/WORKBOOK_v1.md` | Adult, coach, facilitator, manager when appropriate | Current v1 workbook for private reflection, shared preparation, experiment design, and 30-day review | Work examples, disclosure choices, role-design hypothesis, experiment plan, review path |
+| `docs/INTERPRETATION_GUIDE_v1.md` | Adult, coach, facilitator, HR, manager when appropriate | Responsible qualitative interpretation of patterns and role-design hypotheses | Bounded interpretation without diagnosis, scoring, ranking, or fixed conclusions |
+| `docs/MANAGER_CONVERSATION_GUIDE_v1.md` | Manager, employer, HR, coach, facilitator | Manager-facing conversation guide with agendas, questions, notes, action plan, and review template | Role/context notes and one bounded 30-day work experiment |
 
 Supporting documents:
 
 | File | Purpose |
 |---|---|
-| `docs/v1_audit.md` | Product and launch readiness audit |
-| `docs/PRD_v1.md` | v1 product requirements and launch positioning |
-| `README.md` | Public overview, package structure, roadmap, and boundaries |
+| `docs/ONBOARDING.md` | Current starting paths for individuals, manager-supported use, facilitators, employer pilots, and reviewers |
+| `docs/V1_PACKAGE_INDEX.md` | Current package map, use order, and launch gaps |
+| `docs/BETA_DISCLOSURE_AND_CONSENT.md` | Beta disclosure, consent wording, and disclosure safeguards |
+| `docs/PRIVATE_BETA_RECORDS_SOP.md` | Invite-only beta contact, records, consent, feedback, retention, deletion, and accidental-disclosure process |
+| `docs/RESPONSIBLE_USE_GUIDE.md` | Responsible-use rules and prohibited uses |
+| `docs/PRIVACY_PLACEHOLDER.md` | Current static-prototype privacy posture |
+| `docs/SECURITY.md` | Current static-prototype security posture and reporting route |
+| `README.md` | Repository overview, package structure, roadmap, and boundaries |
+
+Legacy/reference documents:
+
+| File | Status | Use |
+|---|---|---|
+| `Adult Self-Scan v0.1.md` | Legacy/reference | Earlier adult private reflection scan, retained for comparison |
+| `Employer Role Scan v0.1.md` | Legacy/reference | Earlier manager/employer role-context scan, retained for comparison |
+| `Joint Conversation Canvas v0.1.md` | Legacy/reference | Earlier joint conversation canvas, retained for comparison |
+
+Do not use the v0.1 files as the default private-beta starting path unless the
+purpose is comparison with the current v1 package.
 
 ## 3. Before You Start
 
@@ -120,7 +136,7 @@ Use these dimensions as prompts for evidence. Do not use them as a scorecard.
 
 ## 6. Individual Reflection Flow
 
-Use `Adult Self-Scan v0.1.md`.
+Use the private and adult-facing sections of `docs/WORKBOOK_v1.md`.
 
 1. Read the purpose and boundaries.
 2. Fill in the quick summary lightly before going deep.
@@ -153,7 +169,8 @@ Avoid:
 
 ## 7. Employer or Manager Flow
 
-Use `Employer Role Scan v0.1.md`.
+Use `docs/MANAGER_CONVERSATION_GUIDE_v1.md` and the shared work-context
+sections of `docs/WORKBOOK_v1.md`.
 
 1. Read the purpose and boundaries.
 2. Complete the quick role summary from the role-context side.
@@ -190,7 +207,8 @@ The employer-side output should answer:
 
 ## 8. Joint Conversation Flow
 
-Use `Joint Conversation Canvas v0.1.md`.
+Use `docs/WORKBOOK_v1.md` for the shared experiment sections and
+`docs/MANAGER_CONVERSATION_GUIDE_v1.md` for the meeting flow.
 
 Recommended participants:
 
@@ -304,8 +322,8 @@ Minimum privacy practice:
 - Marketing, feedback, and website forms should not request completed scans or
   identifiable workplace conflict details.
 
-If privacy cannot be protected, use the Adult Self-Scan privately and do not run
-the joint canvas until conditions improve.
+If privacy cannot be protected, use the workbook privately and do not run the
+shared conversation until conditions improve.
 
 ## 12. When to Pause or Escalate
 
@@ -359,15 +377,10 @@ The current package is draft material.
 
 Not yet present:
 
-- Stable v1 workbook files.
 - Facilitator guide as a separate artifact.
-- Adult privacy and disclosure guide as a separate artifact.
-- Employer responsible-use guide as a separate artifact.
-- Synthetic worked example.
 - 30-day experiment tracker outside the joint canvas.
 - Sample report.
-- Website copy and launch materials.
-- Terms of use, privacy notice, license, or legal review.
+- Final terms of use, final privacy notice, license, or legal review.
 - PDF, DOCX, or print-verified editions.
 - Automated content QA.
 - Evidence from user testing or validation.
@@ -379,23 +392,24 @@ clinically reviewed, legally reviewed, or ready for HR decision use.
 
 For an individual adult:
 
-1. Open `Adult Self-Scan v0.1.md`.
-2. Complete the quick summary and the most relevant fit dimensions.
-3. Complete disclosure planning.
-4. Write a minimum useful request and optional shareable conversation summary.
+1. Open `docs/WORKBOOK_v1.md`.
+2. Complete only the private sections needed for the current role-fit question.
+3. Mark what stays private before sharing anything.
+4. Draft one minimum useful role-design request and optional manager-safe
+   summary.
 
 For a manager or employer:
 
-1. Open `Employer Role Scan v0.1.md`.
-2. Complete the quick role summary.
-3. Identify one adjustable role lever.
-4. Prepare role-design output before a joint conversation.
+1. Open `docs/MANAGER_CONVERSATION_GUIDE_v1.md`.
+2. Review the boundaries and choose the 30-minute or 60-minute path.
+3. Prepare role/context notes using concrete examples, not personal labels.
+4. Identify one adjustable role lever and one reviewable experiment candidate.
 
 For a facilitated pair or trio:
 
 1. Adult prepares privately.
-2. Manager or employer prepares the role-context scan.
-3. Open `Joint Conversation Canvas v0.1.md`.
+2. Manager or employer prepares from the manager conversation guide.
+3. Open the shared experiment sections of `docs/WORKBOOK_v1.md`.
 4. Agree on one fit dimension, one hypothesis, and one 30-day experiment.
 5. Review after 30 days and decide whether to continue, adjust, formalize,
    escalate, or stop.

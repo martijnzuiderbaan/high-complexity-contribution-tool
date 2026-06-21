@@ -4,7 +4,6 @@
     PRIMARY_CTA_CLICKED: "primary_cta_clicked",
     SECONDARY_CTA_CLICKED: "secondary_cta_clicked",
     TOOL_PACK_LINK_CLICKED: "tool_pack_link_clicked",
-    BETA_FORM_ATTEMPTED: "beta_form_attempted",
     BETA_DISCLOSURE_VIEWED: "beta_disclosure_viewed",
     PRIVACY_PLACEHOLDER_VIEWED: "privacy_placeholder_viewed",
     RESPONSIBLE_USE_VIEWED: "responsible_use_viewed",
@@ -13,8 +12,6 @@
   };
   var analyticsDebug = isAnalyticsDebugEnabled();
   var revealItems = document.querySelectorAll(".section-reveal");
-  var betaForm = document.querySelector("[data-prototype-form]");
-  var formStatus = document.getElementById("form-status");
 
   function isAnalyticsDebugEnabled() {
     try {
@@ -121,22 +118,6 @@
     revealItems.forEach(function (item) {
       item.classList.add("is-visible");
       trackSectionView(item);
-    });
-  }
-
-  if (betaForm && formStatus) {
-    betaForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-      analytics.track(
-        betaForm.getAttribute("data-analytics-form") ||
-          AnalyticsEvents.BETA_FORM_ATTEMPTED,
-        { label: "prototype_beta_form" }
-      );
-
-      // TODO: Connect this to a privacy-reviewed email capture service after
-      // consent, retention, and sensitive-data handling are defined.
-      formStatus.textContent =
-        "This prototype does not submit yet. For now, contact the maintainer directly.";
     });
   }
 })();

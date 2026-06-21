@@ -77,8 +77,8 @@ Current Markdown/static site structure:
   manager guide, package index, monetization plan, open items, and this access
   plan.
 - `site/` contains a dependency-free static landing page prototype.
-- The beta form in `site/index.html` is front-end only and explicitly stores
-  nothing.
+- The beta access area in `site/index.html` has no input fields and explicitly
+  stores, submits, emails, and sends nothing.
 - There is no build step, backend, database, checkout, account portal, email
   provider, analytics provider, or deployment configuration.
 
@@ -186,7 +186,7 @@ What should be beta-gated:
 - Synthetic worked examples before public release.
 - Manager or employer pilot materials.
 - Any materials that could be misused without orientation.
-- Any pricing or license terms that are still being validated.
+- Any pricing or license terms that are still being tested.
 
 What should stay internal:
 

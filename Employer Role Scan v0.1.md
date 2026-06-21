@@ -11,6 +11,12 @@ use: non-diagnostic role-context scan for managers and employers
 
 # Employer Role Scan v0.1
 
+> Legacy/reference note: this v0.1 artifact is retained for comparison and
+> source material. For private beta and current v1 onboarding, use
+> `docs/WORKBOOK_v1.md`, `docs/INTERPRETATION_GUIDE_v1.md`,
+> `docs/MANAGER_CONVERSATION_GUIDE_v1.md`, and
+> `docs/V1_PACKAGE_INDEX.md`.
+
 ## Purpose
 
 This role scan helps a manager, employer, HR partner, or coach examine whether a role and work context can convert high-complexity capacity into sustainable contribution.

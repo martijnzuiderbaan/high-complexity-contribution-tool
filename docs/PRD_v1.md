@@ -13,17 +13,22 @@ use: non-diagnostic product scope and v1 launch planning
 
 Prepared for the v1 launch of the **High-Complexity Contribution Tool** / **Instrument Complexiteit naar Bijdrage**.
 
-This PRD assumes the current product is a guided workbook and facilitation package built from the existing Markdown artifacts:
+This PRD assumes the current product is a guided workbook and facilitation package built from the current v1 Markdown package:
 
-- `Adult Self-Scan v0.1.md`
-- `Employer Role Scan v0.1.md`
-- `Joint Conversation Canvas v0.1.md`
+- `docs/WORKBOOK_v1.md`
+- `docs/INTERPRETATION_GUIDE_v1.md`
+- `docs/MANAGER_CONVERSATION_GUIDE_v1.md`
+- `docs/USER_GUIDE.md`
+- `docs/V1_PACKAGE_INDEX.md`
+
+The root v0.1 artifacts are legacy/reference source material for product
+comparison, not the default private-beta starting path.
 
 The product must remain non-diagnostic, non-selective, and role-design oriented. It must not become an IQ test, giftedness diagnosis, psychometric assessment, hiring tool, promotion tool, performance-review tool, burnout diagnosis, occupational-health determination, disability determination, or automated employee-ranking system.
 
 ## 1. Product one-liner
 
-The High-Complexity Contribution Tool helps high-complexity adults, managers, and facilitators turn vague role-fit tension into a safe, concrete 30-day work experiment that can unlock sustainable contribution without diagnosis, scoring, or HR ranking.
+The High-Complexity Contribution Tool helps high-complexity adults, managers, and facilitators turn vague role-fit tension into a bounded, concrete 30-day work experiment that can support sustainable contribution without diagnosis, scoring, or HR ranking.
 
 ## 2. Target users
 
@@ -63,7 +68,7 @@ The v1 product is not for:
 The current alternative is usually an improvised and risky conversation:
 
 - The adult tries to explain underchallenge, overdrive, values friction, or misfit without sounding entitled, difficult, fragile, or abstract.
-- The manager sees behavior, friction, boredom, speed, quality sensitivity, or conflict risk but lacks a safe role-design language.
+- The manager sees behavior, friction, boredom, speed, quality sensitivity, or conflict risk but lacks a bounded role-design language.
 - HR or coaches rely on generic engagement tools, personality labels, performance processes, or informal advice that does not fit high-complexity contribution.
 - The conversation drifts toward proving giftedness, diagnosing the person, debating attitude, or escalating conflict.
 - The outcome is often vague: "communicate better", "be more flexible", "give more challenge", or "set boundaries", without a testable role experiment.
@@ -107,8 +112,8 @@ User story:
 |---|---|
 | Trigger | The adult feels underused, overloaded, misunderstood, constrained, or near conflict/exit. |
 | Action | Complete the Adult Self-Scan privately, choose concrete examples, mark what to keep private, and draft a shareable conversation summary. |
-| Output | A concise summary of strongest contribution, largest fit gap, safe request, 30-day experiment candidate, and evidence of success/failure. |
-| Success criteria | The adult can name one fit dimension, one concrete example, one safe request, and one 30-day experiment without needing to disclose private labels or health-adjacent details. |
+| Output | A concise summary of strongest contribution, largest fit gap, bounded request, 30-day experiment candidate, and evidence of success/failure. |
+| Success criteria | The adult can name one fit dimension, one concrete example, one bounded request, and one 30-day experiment without needing to disclose private labels or health-adjacent details. |
 
 ### Use case 2: Manager examines role/context before reacting to the person
 
@@ -134,7 +139,7 @@ User story:
 | Trigger | Adult and manager agree to discuss role fit with a coach, HR partner, or facilitator. |
 | Action | Use the Joint Conversation Canvas to compare adult and employer signals, select one pathway hypothesis, and define a 30-day work experiment. |
 | Output | A completed joint canvas with shared evidence, selected fit dimension, pathway hypothesis, adult actions, manager actions, protected workload, stop conditions, and review date. |
-| Success criteria | The session ends with one experiment that is small, observable, time-bound, safe enough to run, and explicitly not a performance or giftedness assessment. |
+| Success criteria | The session ends with one experiment that is small, observable, time-bound, bounded enough to run, and explicitly not a performance or giftedness assessment. |
 
 ### Use case 4: HR or coach evaluates whether this is the right tool
 
@@ -215,7 +220,8 @@ These are internal product operations, not end-user assessment features.
 - Analytics on completed personal responses.
 - Uploading or storing completed scans in a central product system.
 - Any recommendation engine that bypasses human judgment and context.
-- A full web app for v1 unless the workbook/package has first been validated.
+- A full web app for v1 unless the workbook/package has first been tested in
+  controlled beta use.
 
 ## 6. UX flow
 
@@ -289,7 +295,7 @@ Avoid per-employee assessment pricing. The product should be sold as a role-desi
 
 ### Suggested pricing tiers
 
-Initial pricing should be validated during private beta, but a practical starting structure is:
+Initial pricing should be tested during private beta, but a practical starting structure is:
 
 | Tier | Price suggestion | Buyer | Includes |
 |---|---:|---|---|

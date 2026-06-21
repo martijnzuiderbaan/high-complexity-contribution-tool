@@ -37,8 +37,8 @@ Use it for:
 All claims must stay within the current product reality:
 
 - The product is a Markdown-first workbook and static-site prototype.
-- The current site form is a placeholder and does not submit, store, or send
-  data.
+- The current site beta area has no input fields and does not submit, store,
+  email, or send data.
 - There are no accounts, payments, backend APIs, external analytics providers,
   email capture integrations, or live delivery systems.
 - The beta is manual and private.
@@ -378,8 +378,8 @@ View the current tool pack
 
 CTA note:
 
-> The current beta route is manual. The prototype form does not submit, store,
-> or send data.
+> The current beta route is manual and invite-only. The site beta area has no
+> input fields and does not submit, store, email, or send data.
 
 ### Problem Section
 
@@ -452,8 +452,9 @@ selection, promotion, performance rating, ranking, support entitlement, legal
 advice, clinical advice, occupational-health decisions, or employer
 decision-making about a person.
 
-The current prototype form does not submit, store, or send anything. Real beta
-interest must be handled manually until a reviewed intake process exists.
+The current site beta area has no input fields and does not submit, store,
+email, or send anything. Real beta interest must be handled manually until a
+reviewed intake process exists.
 
 ### Trust and Boundaries Section
 
@@ -819,7 +820,7 @@ Best,
    professional-pack value.
 
 2. Some clients do not need another label. They need a way to translate complex
-   work experience into examples, role levers, and one safe experiment.
+   work experience into examples, role levers, and one bounded experiment.
 
    That is the coaching use case I am designing for.
 

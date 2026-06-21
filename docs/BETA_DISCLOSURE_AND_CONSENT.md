@@ -131,19 +131,21 @@ use becomes unsafe, too personal, or too close to an employment decision.
 
 ## 6. Data and Privacy Expectations for the Current Static Prototype
 
-The current static website form does not submit or store data.
+The current static website does not collect beta interest, submit data, or
+store data.
 
 Current prototype posture:
 
 - The website is static HTML, CSS, and JavaScript.
-- The beta form is front-end only.
-- The form does not send email, write to a database, connect to a mailing list,
-  or create a backend record.
+- The beta access area has no input fields.
+- The beta access area does not send email, write to a database, connect to a
+  mailing list, or create a backend record.
 - The Markdown files are local/static documents.
 - There are no accounts, analytics providers, payment providers, backend APIs,
   or database storage in the current repository.
 
-Any real beta intake must be handled manually until a real privacy-reviewed
+Any real beta intake must be invite-only and handled manually under
+`docs/PRIVATE_BETA_RECORDS_SOP.md` until a real privacy-reviewed public intake
 process exists.
 
 For the current beta stage, avoid collecting:
@@ -365,9 +367,11 @@ to handle.
 - Publish or send the responsible-use guide.
 - Define the minimum beta intake fields.
 - Remove or avoid free-text prompts that invite sensitive disclosure.
-- Define where beta contact details and feedback notes will be stored.
-- Define who can access beta records.
-- Define a deletion route for beta contact details and feedback notes.
+- Use `docs/PRIVATE_BETA_RECORDS_SOP.md` to define where beta contact details
+  and feedback notes will be stored.
+- Use the SOP to define who can access beta records.
+- Use the SOP to define a deletion and correction route for beta contact
+  details and feedback notes.
 - Prepare a response for unsuitable use requests.
 - Prepare a response for accidental sensitive disclosure.
 
