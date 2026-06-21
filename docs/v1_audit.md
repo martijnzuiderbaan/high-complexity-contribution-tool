@@ -2,6 +2,12 @@
 
 Prepared for a v0.3-to-v1 launch review of the **High-Complexity Contribution Tool** / **Instrument Complexiteit naar Bijdrage**.
 
+Point-in-time note: This audit predates the later v1 workbook package,
+private-beta blocker fixes, release package, and content QA report. Use it as
+historical/reference context. For current private-beta status, use
+`docs/PRIVATE_BETA_RELEASE_NOTES.md`, `docs/DOCUMENTATION_INDEX.md`,
+`docs/PRIVATE_BETA_BLOCKER_FIXES.md`, and `docs/CONTENT_QA_REPORT.md`.
+
 ## 1. Executive summary
 
 ### What the tool currently does

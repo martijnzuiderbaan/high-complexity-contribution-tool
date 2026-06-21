@@ -22,10 +22,20 @@ record, legal review, privacy review, or production deployment log.
 
 ## 2. Unreleased
 
-No unreleased changes are recorded yet.
+### Added
 
-Future entries should keep changes grouped by user-visible package changes,
-responsible-use updates, beta operations, and known limitations.
+- Added `docs/CONTENT_QA_REPORT.md` for the Step 17 content QA and
+  consistency pass.
+
+### Changed
+
+- Clarified older audit/review docs as point-in-time reference material and
+  aligned navigation labels with current private-beta status.
+
+### Fixed
+
+- Resolved the current manual content QA checklist item for the private-beta
+  package; future automation remains optional if the package grows.
 
 ## 3. Private Beta v0.1.0 - 2026-06-22
 

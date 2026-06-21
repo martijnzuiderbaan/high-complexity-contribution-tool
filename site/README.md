@@ -9,7 +9,8 @@ with no input fields. It also links to the demo flow, onboarding guide,
 synthetic examples, draft beta disclosure, responsible-use guide, privacy
 placeholder, private beta plan, private beta records SOP, security posture, and
 terms placeholder in `../docs/` and `../examples/`, plus the private beta
-release notes and documentation index created for the release package.
+release notes, documentation index, and content QA report created for the
+release package.
 
 ## Open Locally
 

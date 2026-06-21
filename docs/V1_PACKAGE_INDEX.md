@@ -2,7 +2,7 @@
 title: V1 Package Index
 project: High-Complexity Contribution Tool
 working_name: Instrument Complexiteit naar Bijdrage
-date: 2026-06-21
+date: 2026-06-22
 status: draft
 type: package index
 language: nl-en
@@ -35,13 +35,14 @@ system.
 | `docs/V1_PACKAGE_INDEX.md` | Draft | Index of current package, audience mapping, use order, and remaining gaps |
 | `CHANGELOG.md` | Draft | Meaningful product, documentation, release, safety, and packaging changes |
 | `docs/PRIVATE_BETA_RELEASE_NOTES.md` | Draft | Current private-beta release summary, status, included materials, entry criteria, and exit criteria |
+| `docs/CONTENT_QA_REPORT.md` | Draft | Current content QA report, consistency findings, edits made, remaining risks, and readiness judgment |
 | `docs/ROADMAP.md` | Draft | Evidence-gated roadmap for private beta, facilitated beta, pilots, and later public launch candidate work |
 | `docs/LAUNCH_CHECKLIST.md` | Draft | Staged checklist for private beta, facilitated beta, employer pilot, paid pilot, and public launch readiness |
 | `docs/DOCUMENTATION_INDEX.md` | Draft | Navigable index for current package, planning docs, beta operations, website, examples, and legacy/reference materials |
 | `docs/ONBOARDING.md` | Draft | Current starting paths for individuals, manager-supported use, facilitated use, employer pilots, and reviewers |
 | `docs/DEMO_FLOW.md` | Draft | Guided fictional demo path for understanding the workflow without real participant data |
 | `docs/BETA_PLAN.md` | Draft | Manual private beta operating plan, waves, intake, onboarding, feedback, support, tracker, and exit criteria |
-| `docs/v1_audit.md` | Draft | Product and launch readiness audit of the content prototype |
+| `docs/v1_audit.md` | Draft reference | Earlier point-in-time product and launch readiness audit of the content prototype |
 | `docs/PRD_v1.md` | Draft | Product requirements and launch positioning |
 | `docs/BETA_DISCLOSURE_AND_CONSENT.md` | Draft | Beta disclosure, consent wording, and participant information |
 | `docs/PRIVATE_BETA_RECORDS_SOP.md` | Draft | Invite-only private beta records, contact, consent, feedback, retention, deletion, and accidental-disclosure process |
@@ -53,8 +54,8 @@ system.
 | `docs/ACCESS_AND_ACCOUNTS_PLAN.md` | Draft | Access, accounts, manual beta, and payment/access decision plan |
 | `docs/MONETIZATION.md` | Draft | Monetization and pricing hypotheses for manual beta learning and future paid packaging |
 | `docs/MARKETING.md` | Draft source copy | Marketing and launch messaging source, not live public copy |
-| `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` | Draft | Trust, privacy/security, misuse, static-site, and launch-readiness risk review |
-| `docs/V1_LAUNCH_REVIEW.md` | Draft | Multi-lens readiness review for internal review, private beta, employer pilots, paid pilots, and public launch |
+| `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` | Draft reference | Point-in-time trust, privacy/security, misuse, static-site, and launch-readiness risk review |
+| `docs/V1_LAUNCH_REVIEW.md` | Draft reference | Point-in-time multi-lens readiness review for internal review, private beta, employer pilots, paid pilots, and public launch |
 | `docs/PRIVATE_BETA_BLOCKER_FIXES.md` | Draft | Step 15 record of private-beta blocker fixes and remaining launch status |
 | `docs/OPEN_ITEMS.md` | Draft | Persistent backlog for unresolved recommendations and future work |
 | `examples/example_adult_workflow.md` | Draft synthetic example | Fictional adult workflow for review without real personal data |
@@ -74,6 +75,7 @@ system.
 |---|---|---|
 | `README.md` | Someone needs the product overview and boundaries | Shared understanding of purpose, audience, workflow, and roadmap |
 | `docs/PRIVATE_BETA_RELEASE_NOTES.md` | Someone needs the current private-beta release status | Included materials, safe-use boundaries, review route, entry criteria, and exit criteria |
+| `docs/CONTENT_QA_REPORT.md` | Someone needs the current content QA status | Consistency checklist, findings, edits made, remaining risks, and readiness judgment |
 | `docs/DOCUMENTATION_INDEX.md` | Someone needs navigable documentation paths | Current docs grouped by purpose and audience |
 | `docs/USER_GUIDE.md` | A user needs practical instructions for using the package | Clear flow from individual preparation to 30-day review |
 | `docs/V1_PACKAGE_INDEX.md` | A user or maintainer needs to understand the package contents | Artifact map and launch gap list |
@@ -108,14 +110,15 @@ system.
 
 | File | Use when... | Main output |
 |---|---|---|
-| `docs/v1_audit.md` | Reviewing launch readiness, risks, gaps, and commercialization direction | Audit findings and recommended scope |
+| `docs/v1_audit.md` | Reviewing earlier launch readiness, risks, gaps, and commercialization direction | Point-in-time audit findings and recommended scope |
 | `docs/PRD_v1.md` | Planning v1 product scope, launch, monetization, and future roadmap | Requirements and launch positioning |
 | `docs/ROADMAP.md` | Planning staged movement from private beta to later pilots | Evidence gates, non-goals, and decision gates |
 | `docs/LAUNCH_CHECKLIST.md` | Checking readiness for a specific stage | Private beta, facilitated beta, employer pilot, paid pilot, and public launch checklists |
 | `CHANGELOG.md` | Reviewing meaningful package changes | Release history and known limitations |
 | `docs/DOCUMENTATION_INDEX.md` | Maintaining documentation navigation | Source-of-truth notes and reading paths |
-| `docs/V1_LAUNCH_REVIEW.md` | Reviewing current launch readiness by stage | Private beta, employer pilot, paid pilot, and public launch blocker list |
+| `docs/V1_LAUNCH_REVIEW.md` | Reviewing the earlier launch-readiness baseline by stage | Point-in-time private beta, employer pilot, paid pilot, and public launch blocker list |
 | `docs/PRIVATE_BETA_BLOCKER_FIXES.md` | Reviewing Step 15 private-beta blocker handling | Fix summary, unresolved items, and post-fix private beta status |
+| `docs/CONTENT_QA_REPORT.md` | Reviewing Step 17 content QA | Current QA checklist, fixes, remaining risks, and readiness judgment |
 | `AGENTS.md` | Making future repository changes | Content, privacy, and boundary rules |
 
 ## Legacy/Prototype Source Artifacts
@@ -222,13 +225,14 @@ The Step 15 private-beta blocker pass is recorded in
 limited to invite-only operations unless a future step explicitly opens public
 intake.
 
+The current manual content QA pass is recorded in
+`docs/CONTENT_QA_REPORT.md`.
+
 Before larger or more facilitated beta waves, the package still needs:
 
 - Facilitator guide with session scripts, timing, and intervention points if
   the manager guide is not enough.
 - 30-day experiment tracker as a separate artifact or printable handout.
-- Content QA checklist for non-diagnostic boundaries, privacy, terminology,
-  links, and frontmatter.
 - Decision on language strategy: English-first, Dutch-first, or fully bilingual
   `nl-en`.
 - Export review if PDF, DOCX, or printable editions are used.
@@ -271,6 +275,7 @@ proven unless that evidence actually exists and has been reviewed.
 |---|---|
 | "What is this product?" | `README.md` |
 | "What is the current private-beta release?" | `docs/PRIVATE_BETA_RELEASE_NOTES.md` |
+| "Where is the current content QA report?" | `docs/CONTENT_QA_REPORT.md` |
 | "Where is the full documentation map?" | `docs/DOCUMENTATION_INDEX.md` |
 | "How do I use the package?" | `docs/USER_GUIDE.md` |
 | "I need the practical workbook." | `docs/WORKBOOK_v1.md` |

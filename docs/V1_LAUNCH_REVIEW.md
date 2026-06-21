@@ -19,6 +19,13 @@ The review is intentionally critical. It does not implement fixes and does not
 change application, website, analytics, auth, account, payment, backend,
 database, deployment, or third-party-service behavior.
 
+Point-in-time note: This review was written before the Step 15 blocker fixes,
+Step 16 private-beta release package, and Step 17 content QA pass. Some
+must-fix items described below were later resolved for invite-only private
+beta. For current status, use `docs/PRIVATE_BETA_BLOCKER_FIXES.md`,
+`docs/PRIVATE_BETA_RELEASE_NOTES.md`, `docs/DOCUMENTATION_INDEX.md`, and
+`docs/CONTENT_QA_REPORT.md`.
+
 ## 1. Executive Summary
 
 | Launch stage | Readiness score | Status | Reason |

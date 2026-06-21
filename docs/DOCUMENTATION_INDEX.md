@@ -27,6 +27,7 @@ draft artifacts or future launch plans.
 |---|---|
 | `README.md` | Main product overview, workflow, package map, status, and boundaries |
 | `docs/PRIVATE_BETA_RELEASE_NOTES.md` | Current private-beta release summary, status, included materials, entry criteria, and exit criteria |
+| `docs/CONTENT_QA_REPORT.md` | Current content QA report, consistency findings, edits made, remaining risks, and readiness judgment |
 | `docs/ONBOARDING.md` | Practical starting paths for individuals, manager-supported use, coaches/facilitators, employer pilots, and reviewers |
 | `docs/DEMO_FLOW.md` | Fictional demo path for reviewing the workflow without real participant data |
 | `CHANGELOG.md` | Meaningful package and release changes |
@@ -58,6 +59,7 @@ draft artifacts or future launch plans.
 | `docs/BETA_DISCLOSURE_AND_CONSENT.md` | Plain-language beta disclosure, consent wording, participant expectations, and maintainer checklist |
 | `docs/PRIVATE_BETA_RECORDS_SOP.md` | Manual contact, consent, feedback, retention, deletion, correction, and accidental-disclosure process |
 | `docs/PRIVATE_BETA_RELEASE_NOTES.md` | Private-beta release summary, status, included materials, review path, entry criteria, and owner notes |
+| `docs/CONTENT_QA_REPORT.md` | Step 17 content QA report, checklist, fixes, remaining risks, and readiness judgment |
 | `docs/LAUNCH_CHECKLIST.md` | Staged checklist for private beta, facilitated beta, employer pilot, paid pilot, and public launch readiness |
 
 ## 6. Responsible Use, Privacy, Security, and Trust
@@ -68,7 +70,7 @@ draft artifacts or future launch plans.
 | `docs/PRIVACY_PLACEHOLDER.md` | Current static-prototype privacy posture and future beta-intake privacy checklist |
 | `docs/SECURITY.md` | Current static-prototype security posture, issue route placeholder, and pre-launch security checklist |
 | `docs/TERMS_AND_USE_PLACEHOLDER.md` | Plain-language placeholder for terms, acceptable use, prohibited use, and future legal-review needs |
-| `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` | Trust, privacy/security, misuse, static-site, and launch-readiness risk review |
+| `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` | Point-in-time trust, privacy/security, misuse, static-site, and launch-readiness risk review |
 | `docs/PRIVATE_BETA_BLOCKER_FIXES.md` | Step 15 record of private-beta blocker fixes and remaining readiness status |
 
 ## 7. Product and Commercial Planning
@@ -81,9 +83,9 @@ draft artifacts or future launch plans.
 | `docs/ANALYTICS_AND_MEASUREMENT.md` | Privacy-first beta measurement plan and future event taxonomy |
 | `docs/MARKETING.md` | Marketing and launch messaging source, not live public copy |
 | `docs/ROADMAP.md` | Evidence-gated staged roadmap |
-| `docs/V1_LAUNCH_REVIEW.md` | Multi-lens readiness review for private beta, employer pilot, paid pilot, and public launch |
+| `docs/V1_LAUNCH_REVIEW.md` | Point-in-time readiness review for private beta, employer pilot, paid pilot, and public launch; use current release notes and QA report for current status |
 | `docs/OPEN_ITEMS.md` | Persistent backlog for unresolved recommendations and future work |
-| `docs/v1_audit.md` | Earlier product and launch readiness audit |
+| `docs/v1_audit.md` | Earlier point-in-time product and launch readiness audit |
 
 ## 8. Website
 
@@ -153,10 +155,11 @@ Beta reviewer:
 
 1. `docs/PRIVATE_BETA_RELEASE_NOTES.md`
 2. `docs/LAUNCH_CHECKLIST.md`
-3. `docs/BETA_PLAN.md`
-4. `docs/PRIVATE_BETA_RECORDS_SOP.md`
-5. `docs/OPEN_ITEMS.md`
-6. `site/README.md`
+3. `docs/CONTENT_QA_REPORT.md`
+4. `docs/BETA_PLAN.md`
+5. `docs/PRIVATE_BETA_RECORDS_SOP.md`
+6. `docs/OPEN_ITEMS.md`
+7. `site/README.md`
 
 Product or commercial reviewer:
 
@@ -173,10 +176,11 @@ Maintainer:
 1. `README.md`
 2. `docs/DOCUMENTATION_INDEX.md`
 3. `docs/V1_PACKAGE_INDEX.md`
-4. `docs/OPEN_ITEMS.md`
-5. `CHANGELOG.md`
-6. `docs/LAUNCH_CHECKLIST.md`
-7. `AGENTS.md`
+4. `docs/CONTENT_QA_REPORT.md`
+5. `docs/OPEN_ITEMS.md`
+6. `CHANGELOG.md`
+7. `docs/LAUNCH_CHECKLIST.md`
+8. `AGENTS.md`
 
 ## 11. Source-of-Truth Notes
 
@@ -185,6 +189,7 @@ Canonical current private-beta docs:
 - `README.md`
 - `docs/DOCUMENTATION_INDEX.md`
 - `docs/PRIVATE_BETA_RELEASE_NOTES.md`
+- `docs/CONTENT_QA_REPORT.md`
 - `docs/V1_PACKAGE_INDEX.md`
 - `docs/WORKBOOK_v1.md`
 - `docs/INTERPRETATION_GUIDE_v1.md`
@@ -200,6 +205,8 @@ Historical/reference docs:
 - `Employer Role Scan v0.1.md`
 - `Joint Conversation Canvas v0.1.md`
 - `docs/v1_audit.md`
+- `docs/V1_LAUNCH_REVIEW.md`
+- `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md`
 
 Planning docs:
 
@@ -220,3 +227,5 @@ How to avoid outdated v0.1 use:
   current v1 tool path.
 - Keep all future release notes clear about which files are current,
   historical, planning-only, or placeholder.
+- When older audits or reviews mention pre-fix blockers, use current release
+  notes, blocker-fix records, and content QA reports for the current status.

@@ -71,6 +71,7 @@ Beta operations docs:
 - `docs/BETA_PLAN.md`
 - `docs/PRIVATE_BETA_RECORDS_SOP.md`
 - `docs/PRIVATE_BETA_BLOCKER_FIXES.md`
+- `docs/CONTENT_QA_REPORT.md`
 - `docs/OPEN_ITEMS.md`
 
 Demo and onboarding materials:
@@ -103,6 +104,7 @@ Release and checklist docs:
 - `docs/ROADMAP.md`
 - `docs/LAUNCH_CHECKLIST.md`
 - `docs/DOCUMENTATION_INDEX.md`
+- `docs/CONTENT_QA_REPORT.md`
 
 ## 4. Recommended Use Order
 
@@ -138,8 +140,8 @@ For a manager or HR reviewer:
 For a beta reviewer:
 
 1. Read this release note and `docs/DOCUMENTATION_INDEX.md`.
-2. Review `docs/BETA_PLAN.md`, `docs/PRIVATE_BETA_RECORDS_SOP.md`, and
-   `docs/OPEN_ITEMS.md`.
+2. Review `docs/CONTENT_QA_REPORT.md`, `docs/BETA_PLAN.md`,
+   `docs/PRIVATE_BETA_RECORDS_SOP.md`, and `docs/OPEN_ITEMS.md`.
 3. Preview the static site from `site/README.md`.
 4. Walk through `docs/DEMO_FLOW.md`.
 5. Send feedback on clarity, boundaries, missing artifacts, and readiness gaps.
@@ -323,7 +325,8 @@ Manual steps before sending to first beta users:
   security posture, and terms placeholder before the workbook materials.
 - Prepare the private contact record, consent log, product-learning tracker,
   and weekly summary outside this repository.
-- Re-read `docs/OPEN_ITEMS.md` and `docs/LAUNCH_CHECKLIST.md`.
+- Re-read `docs/OPEN_ITEMS.md`, `docs/LAUNCH_CHECKLIST.md`, and
+  `docs/CONTENT_QA_REPORT.md`.
 - Preview the static site and confirm it still has no input fields, no backend,
   no storage, no mailing-list integration, and no real submission.
 

@@ -124,7 +124,8 @@ Current files:
   coach role-context scan artifact.
 - `Joint Conversation Canvas v0.1.md` - legacy/reference shared conversation
   canvas for a bounded 30-day work experiment.
-- `docs/v1_audit.md` - launch audit of the current content prototype.
+- `docs/v1_audit.md` - earlier point-in-time launch audit of the content
+  prototype, retained as reference.
 - `docs/PRD_v1.md` - product requirements and launch positioning for v1.
 - `docs/USER_GUIDE.md` - practical guide for using the current workbook flow.
 - `docs/WORKBOOK_v1.md` - adult-facing and joint-use v1 workbook.
@@ -143,6 +144,8 @@ Current files:
   beta, employer pilot, paid pilot, and public launch readiness.
 - `docs/DOCUMENTATION_INDEX.md` - navigable index of current, planning,
   beta-operational, website, and legacy/reference docs.
+- `docs/CONTENT_QA_REPORT.md` - Step 17 content QA report, consistency
+  findings, edits made, remaining risks, and readiness judgment.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
   packaging, payment planning, and commercial learning.
 - `docs/MARKETING.md` - marketing and launch messaging source document for
@@ -169,10 +172,11 @@ Current files:
   manual feedback workflow, and future event taxonomy.
 - `docs/SECURITY.md` - current static-prototype security posture, reporting
   placeholder, and pre-launch security checklist.
-- `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` - review of current trust,
+- `docs/TRUST_AND_LAUNCH_RISK_REVIEW.md` - point-in-time review of trust,
   privacy/security, misuse, static-site, and launch-readiness risks.
-- `docs/V1_LAUNCH_REVIEW.md` - multi-lens readiness review for internal
-  review, private beta, employer pilots, paid pilots, and public launch.
+- `docs/V1_LAUNCH_REVIEW.md` - point-in-time multi-lens readiness review for
+  internal review, private beta, employer pilots, paid pilots, and public
+  launch.
 - `docs/PRIVATE_BETA_BLOCKER_FIXES.md` - Step 15 record of private-beta blocker
   fixes and remaining readiness status.
 - `docs/TERMS_AND_USE_PLACEHOLDER.md` - plain-language placeholder for terms,
@@ -212,9 +216,8 @@ Then visit `http://127.0.0.1:8000/site/`.
 See `site/README.md` for static-site limits and future integration notes.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
-separate 30-day experiment tracker, content QA checklist, sample report,
-finished public launch materials, final license or terms, and export-ready PDF
-or DOCX editions.
+separate 30-day experiment tracker, sample report, finished public launch
+materials, final license or terms, and export-ready PDF or DOCX editions.
 
 ## v1 Package Structure
 
@@ -229,6 +232,7 @@ What exists now:
   conversation guide, and package index.
 - A private-beta release package: changelog, release notes, roadmap, launch
   checklist, and documentation index.
+- A content QA report/checklist for current private-beta package consistency.
 - Draft beta disclosure, responsible-use, privacy-placeholder, security, and
   manual records materials for private beta preparation.
 - A private beta operating plan for manual intake, staged waves, feedback,
@@ -258,8 +262,8 @@ What a coherent v1 package should contain:
 - Free starter checklist or mini-canvas.
 - Website copy, FAQ, sample page previews, and launch materials.
 - Clear terms of use, privacy/disclosure guidance, and license language.
-- Content QA checklist for non-diagnostic boundaries, privacy language,
-  terminology consistency, and frontmatter shape.
+- Maintained content QA report or checklist for non-diagnostic boundaries,
+  privacy language, terminology consistency, links, and frontmatter shape.
 - Printable PDF and editable Markdown or DOCX versions once export quality is
   ready.
 
@@ -299,7 +303,7 @@ Current status:
 - Markdown-first content prototype.
 - Three legacy/reference v0.1 draft artifacts exist.
 - Audit, PRD, README, and user guide exist.
-- No v1 workbook release has been frozen.
+- No public or commercial v1 workbook release has been frozen.
 - A lightweight static website prototype exists in `site/`.
 - Demo, onboarding, and synthetic example materials now exist for product
   walkthroughs and beta review.
@@ -310,6 +314,7 @@ Current status:
 - Private-beta release package docs are recorded in `CHANGELOG.md`,
   `docs/PRIVATE_BETA_RELEASE_NOTES.md`, `docs/ROADMAP.md`,
   `docs/LAUNCH_CHECKLIST.md`, and `docs/DOCUMENTATION_INDEX.md`.
+- Current package content QA is recorded in `docs/CONTENT_QA_REPORT.md`.
 - Private beta remains invite-only and manual: the static site has no intake
   fields, no backend, no storage, and no real submission.
 - No public deployment, payment flow, export package, legal/privacy review,
@@ -329,7 +334,8 @@ Recommended next steps:
 - Decide the language strategy: English-first, Dutch-first, or fully bilingual
   `nl-en`.
 - Prepare website copy, FAQ, sample pages, and a free starter artifact.
-- Add a content QA checklist or script if the repository grows.
+- Keep `docs/CONTENT_QA_REPORT.md` current and add a lightweight validation
+  script only if the repository grows.
 
 Not ready yet:
 

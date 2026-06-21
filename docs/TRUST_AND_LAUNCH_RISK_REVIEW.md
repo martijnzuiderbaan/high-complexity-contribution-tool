@@ -18,6 +18,13 @@ Bijdrage**.
 It is a product and trust review, not a formal legal, privacy, clinical,
 security, employment, or occupational-health review.
 
+Point-in-time note: This review records the trust and static-site posture at
+the time it was written. The static beta form fields and some contact-route
+blockers described below were later changed in Step 15, then packaged in Step
+16 and reviewed in Step 17. Use `docs/PRIVATE_BETA_BLOCKER_FIXES.md`,
+`docs/PRIVATE_BETA_RELEASE_NOTES.md`, `docs/DOCUMENTATION_INDEX.md`, and
+`docs/CONTENT_QA_REPORT.md` for current private-beta status.
+
 ## 1. Executive Summary
 
 Current readiness level:
