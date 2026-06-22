@@ -3,10 +3,10 @@ title: Deployment Plan
 project: High-Complexity Contribution Tool
 working_name: Instrument Complexiteit naar Bijdrage
 date: 2026-06-22
-status: draft with GitHub Pages workflow configured
+status: draft with GitHub Pages private-repo plan blocker
 type: deployment planning
 language: nl-en
-use: static-site deployment preparation and current GitHub Pages configuration
+use: static-site deployment preparation and current GitHub Pages blocker
 ---
 
 # Deployment Plan
@@ -15,7 +15,8 @@ use: static-site deployment preparation and current GitHub Pages configuration
 
 This document prepares the repository for static-site deployment of the
 **High-Complexity Contribution Tool** / **Instrument Complexiteit naar
-Bijdrage** and records the current GitHub Pages configuration.
+Bijdrage** and records the current GitHub Pages blocker for a private
+repository.
 
 It does not create a backend, connect a domain, add external services, make the
 beta invite flow live, or imply public launch readiness. It remains a planning
@@ -28,8 +29,8 @@ Current architecture:
 - Static HTML, CSS, and JavaScript live in `site/`.
 - Hosted Markdown/document links in `site/index.html` point to private GitHub
   repository files for invited collaborators.
-- `.github/workflows/pages.yml` deploys only the curated `site/` folder to
-  GitHub Pages.
+- GitHub Pages hosting for the private repository is blocked by the current
+  GitHub plan.
 - There is no build step.
 - There is no backend.
 - There is no form submission.
@@ -40,8 +41,8 @@ Current architecture:
   does not send events to an external provider.
 
 The local site can be opened directly from `site/index.html` or served from the
-repository root at `/site/`. The hosted Pages deployment serves the contents of
-`site/` from the project Pages root.
+repository root at `/site/`. A future static host should publish the contents of
+`site/` as the curated public artifact.
 
 ## 3. Recommended Deployment Approach
 
@@ -270,9 +271,11 @@ Recommended first target for a private-link reviewer preview remains:
 **Netlify static site preview**.
 
 Current requested GitHub target: **GitHub Pages from a private repository**.
-GitHub Pages sites are public on the internet even when the source repository
-is private, so the current workflow deploys only the curated `site/` folder and
-keeps the full Markdown package in the private repository.
+GitHub rejected this setup for the current account plan with: `Your current
+plan does not support GitHub Pages for this repository.` GitHub Pages sites are
+public on the internet even when the source repository is private, so any
+future Pages setup should deploy only the curated `site/` folder and keep the
+full Markdown package in the private repository.
 
 Why it fits private beta:
 
@@ -298,7 +301,7 @@ Fallback option:
 
 ## 5. Deployment Scope
 
-What to deploy for the current GitHub Pages landing page:
+What to deploy for a public landing page:
 
 - `site/index.html`
 - `site/styles.css`
@@ -373,11 +376,13 @@ controls. Do not deploy sensitive material.
 
 ## 7. Static Hosting Setup Outline
 
-Current GitHub Pages target: custom workflow in `.github/workflows/pages.yml`.
+Current GitHub Pages target: blocked for this private repository on the current
+GitHub plan.
 
-High-level setup:
+If GitHub Pages becomes available through a plan change or a public repository,
+use a custom workflow with this high-level setup:
 
-1. Repository/source selection: private GitHub repository on `main`.
+1. Repository/source selection: GitHub repository on `main`.
 2. Pages build type: GitHub Actions workflow.
 3. Publish artifact: copy `site/` into `_site` and upload that artifact only.
 4. Entry point: `site/index.html` becomes the hosted Pages root `index.html`.

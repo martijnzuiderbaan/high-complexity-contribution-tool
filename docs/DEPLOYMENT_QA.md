@@ -85,7 +85,7 @@ Check links in:
 Confirm:
 
 - Relative links resolve from the intended deployment root.
-- For the GitHub Pages workflow, hosted links to `docs/`, `examples/`, and
+- For a site-only hosted deployment, hosted links to `docs/`, `examples/`, and
   `README.md` open the private GitHub repository for invited collaborators.
 - If a later provider publishes the repository root, links from `/site/` to
   `../docs/`, `../examples/`, and `../README.md` work or are intentionally

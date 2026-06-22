@@ -45,10 +45,10 @@ Markdown paths. Those repository links require access to the private repository.
   placeholder documents plus private beta release package docs exist in
   `../docs/` and the repository root; final legal/privacy terms and production
   security assurance are still not implemented.
-- A GitHub Pages workflow can publish only this `site/` folder. GitHub Pages
-  sites are public on the internet even when the repository is private, so the
-  hosted page deliberately links back to private repository materials instead
-  of deploying the full Markdown package.
+- GitHub Pages hosting for the private repository is blocked by the current
+  GitHub plan. Any future host should publish only this `site/` folder and keep
+  the full Markdown package in the private repository unless broader exposure
+  is deliberately approved.
 
 ## Deployment Planning
 
@@ -62,8 +62,8 @@ For local preview, serve the repository root and open `/site/`:
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-The GitHub Pages workflow publishes this `site/` directory as a curated static
-export and keeps the full Markdown package in the private repository.
+Future hosting should publish this `site/` directory as a curated static export
+and keep the full Markdown package in the private repository.
 
 ## To Connect Later
 

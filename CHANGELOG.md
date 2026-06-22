@@ -28,7 +28,6 @@ record, legal review, privacy review, or production deployment log.
   classification, current go/no-go status, risk summary, and handoff checklist.
 - Added `docs/CONTENT_QA_REPORT.md` for the Step 17 content QA and
   consistency pass.
-- Added a GitHub Pages workflow that deploys only the curated `site/` folder.
 - Added `site/robots.txt` and no-index metadata for the hosted static page.
 
 ### Changed
@@ -37,6 +36,8 @@ record, legal review, privacy review, or production deployment log.
   aligned navigation labels with current private-beta status.
 - Updated hosted site links to point to private GitHub repository materials
   for invited collaborators instead of publishing the full Markdown package.
+- Recorded that GitHub Pages hosting for the private repository is blocked by
+  the current GitHub plan.
 
 ### Fixed
 

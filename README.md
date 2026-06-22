@@ -222,8 +222,9 @@ Then visit `http://127.0.0.1:8000/site/`.
 
 See `site/README.md` for static-site limits and future integration notes.
 See `docs/DEPLOYMENT.md` and `docs/DEPLOYMENT_QA.md` for static deployment
-planning. A GitHub Pages workflow is configured to publish only the curated
-`site/` folder, not the full Markdown package.
+planning. GitHub Pages hosting for the private repository is blocked by the
+current GitHub plan, so the static site remains a prepared artifact until a
+supported host or plan is chosen.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 separate 30-day experiment tracker, sample report, finished public launch
@@ -328,8 +329,8 @@ Current status:
   `docs/LAUNCH_CHECKLIST.md`, and `docs/DOCUMENTATION_INDEX.md`.
 - Current package content QA is recorded in `docs/CONTENT_QA_REPORT.md`.
 - Static-site deployment planning is recorded in `docs/DEPLOYMENT.md` and
-  `docs/DEPLOYMENT_QA.md`; a GitHub Pages workflow is configured to publish
-  only the curated `site/` folder.
+  `docs/DEPLOYMENT_QA.md`; GitHub Pages hosting for the private repository is
+  blocked by the current GitHub plan.
 - Final consolidation and current handoff status are recorded in
   `docs/FINAL_HANDOFF.md`.
 - Private beta remains invite-only and manual: the static site has no intake
