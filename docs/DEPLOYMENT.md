@@ -3,31 +3,33 @@ title: Deployment Plan
 project: High-Complexity Contribution Tool
 working_name: Instrument Complexiteit naar Bijdrage
 date: 2026-06-22
-status: draft
+status: draft with GitHub Pages workflow configured
 type: deployment planning
 language: nl-en
-use: static-site deployment preparation without external deployment
+use: static-site deployment preparation and current GitHub Pages configuration
 ---
 
 # Deployment Plan
 
 ## 1. Purpose
 
-This document prepares the repository for a future static-site deployment of
-the **High-Complexity Contribution Tool** / **Instrument Complexiteit naar
-Bijdrage**.
+This document prepares the repository for static-site deployment of the
+**High-Complexity Contribution Tool** / **Instrument Complexiteit naar
+Bijdrage** and records the current GitHub Pages configuration.
 
-It does not deploy the site, create hosting accounts, connect a domain, add
-external services, make the beta invite flow live, or imply public launch
-readiness. It is a planning document for static files only.
+It does not create a backend, connect a domain, add external services, make the
+beta invite flow live, or imply public launch readiness. It remains a planning
+document for static files only.
 
 ## 2. Current Site Architecture
 
 Current architecture:
 
 - Static HTML, CSS, and JavaScript live in `site/`.
-- Markdown docs are linked relatively from `site/index.html` into `../docs/`,
-  `../examples/`, and `../README.md`.
+- Hosted Markdown/document links in `site/index.html` point to private GitHub
+  repository files for invited collaborators.
+- `.github/workflows/pages.yml` deploys only the curated `site/` folder to
+  GitHub Pages.
 - There is no build step.
 - There is no backend.
 - There is no form submission.
@@ -37,9 +39,9 @@ Current architecture:
 - `site/script.js` contains local no-op/debug analytics event names only. It
   does not send events to an external provider.
 
-The current site works best when the repository root is served locally, then
-the page is opened at `/site/`. Serving only the `site/` directory renders the
-page, but links to `../docs/` and `../examples/` will not resolve.
+The local site can be opened directly from `site/index.html` or served from the
+repository root at `/site/`. The hosted Pages deployment serves the contents of
+`site/` from the project Pages root.
 
 ## 3. Recommended Deployment Approach
 
@@ -264,7 +266,13 @@ Recommendation:
 
 ## 4. Recommended First Deployment Target
 
-Recommended first target: **Netlify static site preview**.
+Recommended first target for a private-link reviewer preview remains:
+**Netlify static site preview**.
+
+Current requested GitHub target: **GitHub Pages from a private repository**.
+GitHub Pages sites are public on the internet even when the source repository
+is private, so the current workflow deploys only the curated `site/` folder and
+keeps the full Markdown package in the private repository.
 
 Why it fits private beta:
 
@@ -290,11 +298,15 @@ Fallback option:
 
 ## 5. Deployment Scope
 
-What to deploy for a first private-reviewer preview:
+What to deploy for the current GitHub Pages landing page:
 
 - `site/index.html`
 - `site/styles.css`
 - `site/script.js`
+- `site/robots.txt`
+
+What to deploy for a later private-reviewer preview with broader materials:
+
 - `site/README.md` if the host exposes Markdown docs for reviewers.
 - Selected current docs needed by the page and invited reviewers.
 - Selected synthetic examples from `examples/` if the demo flow is included.
@@ -336,7 +348,7 @@ Private beta effect:
 
 ## 6. Pre-Deployment Decisions
 
-Before any external deployment, decide:
+Before changing deployment scope or sharing more broadly, decide:
 
 - Domain or subdomain: whether to use a provider preview URL, a temporary
   subdomain, or a future public domain.
@@ -361,7 +373,22 @@ controls. Do not deploy sensitive material.
 
 ## 7. Static Hosting Setup Outline
 
-Recommended target: Netlify static site preview.
+Current GitHub Pages target: custom workflow in `.github/workflows/pages.yml`.
+
+High-level setup:
+
+1. Repository/source selection: private GitHub repository on `main`.
+2. Pages build type: GitHub Actions workflow.
+3. Publish artifact: copy `site/` into `_site` and upload that artifact only.
+4. Entry point: `site/index.html` becomes the hosted Pages root `index.html`.
+5. Docs and examples: not deployed in the Pages artifact; hosted links point to
+   the private repository for invited collaborators.
+6. Build command: none beyond the copy step in the workflow.
+7. Analytics/forms/accounts/payments: none.
+8. Indexing: `site/index.html` includes `noindex,nofollow`; `site/robots.txt`
+   is included for future root/custom-domain deployments.
+
+Alternative target: Netlify static site preview.
 
 High-level setup:
 

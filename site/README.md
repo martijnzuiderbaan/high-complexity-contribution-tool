@@ -4,19 +4,18 @@ This folder contains a lightweight commercial landing page for the
 High-Complexity Contribution Tool / Instrument Complexiteit naar Bijdrage.
 
 The site introduces the tool, explains the responsible-use boundaries, links to
-the local Markdown tool pack, and provides an invite-only beta access panel
-with no input fields. It also links to the demo flow, onboarding guide,
-synthetic examples, draft beta disclosure, responsible-use guide, privacy
-placeholder, private beta plan, private beta records SOP, security posture, and
-terms placeholder in `../docs/` and `../examples/`, plus the private beta
-release notes, documentation index, and content QA report created for the
-release package. Deployment planning is documented in `../docs/DEPLOYMENT.md`
-and `../docs/DEPLOYMENT_QA.md`.
+the private repository materials for invited collaborators, and provides an
+invite-only beta access panel with no input fields. It also links to the demo
+flow, onboarding guide, synthetic examples, draft beta disclosure,
+responsible-use guide, privacy placeholder, private beta plan, private beta
+records SOP, security posture, and terms placeholder in the private repository,
+plus the private beta release notes, documentation index, and content QA report
+created for the release package. Deployment planning is documented in
+`../docs/DEPLOYMENT.md` and `../docs/DEPLOYMENT_QA.md`.
 
 ## Open Locally
 
-Open `site/index.html` directly in a browser, or serve the repository root so
-the relative links to `docs/` and `README.md` continue to work:
+Open `site/index.html` directly in a browser, or serve the repository root:
 
 ```bash
 python3 -m http.server 8000
@@ -28,8 +27,8 @@ Then visit:
 http://127.0.0.1:8000/site/
 ```
 
-Serving only the `site/` directory also renders the page, but links to
-`../docs/` will not resolve because those files sit outside that server root.
+The hosted page links to GitHub repository files rather than relative local
+Markdown paths. Those repository links require access to the private repository.
 
 ## Static or Mock Only
 
@@ -46,7 +45,10 @@ Serving only the `site/` directory also renders the page, but links to
   placeholder documents plus private beta release package docs exist in
   `../docs/` and the repository root; final legal/privacy terms and production
   security assurance are still not implemented.
-- No external deployment has been performed by this step.
+- A GitHub Pages workflow can publish only this `site/` folder. GitHub Pages
+  sites are public on the internet even when the repository is private, so the
+  hosted page deliberately links back to private repository materials instead
+  of deploying the full Markdown package.
 
 ## Deployment Planning
 
@@ -60,9 +62,8 @@ For local preview, serve the repository root and open `/site/`:
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Publishing only this `site/` directory will break links to `../docs/` and
-`../examples/`. A reviewer deployment should either publish the repository root
-with `/site/` as the entry point or use a deliberately curated static export.
+The GitHub Pages workflow publishes this `site/` directory as a curated static
+export and keeps the full Markdown package in the private repository.
 
 ## To Connect Later
 

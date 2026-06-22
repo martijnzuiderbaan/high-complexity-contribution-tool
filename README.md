@@ -193,7 +193,8 @@ Current files:
 - `examples/` - synthetic, non-diagnostic examples for an adult workflow,
   manager conversation, and 30-day role-design experiment.
 - `site/` - dependency-free static landing page prototype for the product,
-  with local links back to the Markdown tool pack and no intake fields.
+  with hosted links to the private repository materials for invited
+  collaborators and no intake fields.
 - `AGENTS.md` - repository instructions for future Codex runs.
 
 No package manifest, build system, test suite, or runtime configuration exists
@@ -211,8 +212,7 @@ Open it directly:
 open site/index.html
 ```
 
-Or serve the repository root so the landing page links can reach the local
-Markdown docs:
+Or serve the repository root:
 
 ```bash
 python3 -m http.server 8000
@@ -222,7 +222,8 @@ Then visit `http://127.0.0.1:8000/site/`.
 
 See `site/README.md` for static-site limits and future integration notes.
 See `docs/DEPLOYMENT.md` and `docs/DEPLOYMENT_QA.md` for static deployment
-planning. No external deployment has been performed by this step.
+planning. A GitHub Pages workflow is configured to publish only the curated
+`site/` folder, not the full Markdown package.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 separate 30-day experiment tracker, sample report, finished public launch
@@ -327,13 +328,14 @@ Current status:
   `docs/LAUNCH_CHECKLIST.md`, and `docs/DOCUMENTATION_INDEX.md`.
 - Current package content QA is recorded in `docs/CONTENT_QA_REPORT.md`.
 - Static-site deployment planning is recorded in `docs/DEPLOYMENT.md` and
-  `docs/DEPLOYMENT_QA.md`; no external deployment has been performed.
+  `docs/DEPLOYMENT_QA.md`; a GitHub Pages workflow is configured to publish
+  only the curated `site/` folder.
 - Final consolidation and current handoff status are recorded in
   `docs/FINAL_HANDOFF.md`.
 - Private beta remains invite-only and manual: the static site has no intake
   fields, no backend, no storage, and no real submission.
-- No public deployment, payment flow, export package, legal/privacy review,
-  facilitator guide, or export-ready package exists yet.
+- No public product launch, payment flow, export package, legal/privacy
+  review, facilitator guide, or export-ready package exists yet.
 - Analytics are currently limited to optional local no-op/debug
   instrumentation; no external analytics provider is connected.
 - Security and terms materials are placeholders for launch preparation, not

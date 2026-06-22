@@ -85,7 +85,11 @@ Check links in:
 Confirm:
 
 - Relative links resolve from the intended deployment root.
-- Links from `/site/` to `../docs/`, `../examples/`, and `../README.md` work.
+- For the GitHub Pages workflow, hosted links to `docs/`, `examples/`, and
+  `README.md` open the private GitHub repository for invited collaborators.
+- If a later provider publishes the repository root, links from `/site/` to
+  `../docs/`, `../examples/`, and `../README.md` work or are intentionally
+  replaced.
 - No link implies live beta intake, live payment, accounts, or public launch.
 - Public-facing and internal/reviewer docs are not mixed accidentally on a
   public deployment.
