@@ -98,8 +98,7 @@ Confirm:
 
 Confirm the deployed files still have:
 
-- No input fields.
-- No form submission.
+- No intake form submission.
 - No backend calls.
 - No external analytics provider.
 - No cookies.
@@ -117,10 +116,12 @@ For `site/`, inspect for:
 - `sendBeacon`
 - External script URLs.
 - External analytics URLs.
-- Form, input, select, or textarea elements.
+- Form elements that submit externally.
 
-The current CSS may include unused form styles. That is not a live form by
-itself; the HTML must still have no input fields or submission behavior.
+The landing beta access area must still have no input fields. The `/tool/`
+prototype may have input, select, and textarea elements, but answers must remain
+browser-local with optional localStorage and user-controlled Markdown export
+only.
 
 ## 5. Copy and Claim QA
 
@@ -219,6 +220,7 @@ After any future deployment, test the deployed URL:
 - Security page loads.
 - Responsible-use guide loads.
 - Beta section still has no input fields.
+- Tool page explains browser-local storage before scan fields.
 - Footer links resolve.
 - No network calls beyond static assets occur where practical.
 - No external analytics, cookies, forms, payments, accounts, or backend calls

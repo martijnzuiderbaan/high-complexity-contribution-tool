@@ -34,7 +34,9 @@ Current architecture:
   private-repository Pages plan.
 - There is no build step.
 - There is no backend.
-- There is no form submission.
+- There is no form submission or external answer capture.
+- `site/tool/` has browser-local input fields, optional localStorage after
+  acknowledgement, and user-controlled Markdown export.
 - There is no external analytics provider.
 - There is no account, authentication, payment, checkout, license-delivery, or
   subscription system.
@@ -433,6 +435,7 @@ Before deployment, confirm:
   security policy, frame protection, referrer policy, and permissions policy.
 - The site continues to have no backend calls, no external analytics provider,
   no cookies, no accounts, no payments, no file upload, and no real submission.
+  Tool answers remain browser-local unless the user exports them.
 
 ## 9. Responsible-Use Deployment Considerations
 

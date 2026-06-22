@@ -35,6 +35,9 @@ Markdown paths.
 - No backend exists.
 - The beta access panel has no input fields and does not submit, store, email,
   or persist anything.
+- `tool/` contains a client-only self-scan prototype. It has browser-local
+  input fields, optional localStorage after acknowledgement, and Markdown
+  export. It does not submit answers externally.
 - No analytics provider is connected.
 - `script.js` includes optional provider-agnostic no-op analytics events for
   local debugging only. They log to the console only when explicitly enabled

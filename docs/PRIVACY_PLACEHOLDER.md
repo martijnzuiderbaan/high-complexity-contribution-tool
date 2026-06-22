@@ -43,6 +43,8 @@ Current posture:
 
 - Static site.
 - Static beta access panel with no input fields and no submission.
+- Client-only self-scan prototype with browser-local input fields, optional
+  localStorage after acknowledgement, and user-controlled Markdown export.
 - Local/static Markdown documents.
 - No accounts.
 - No analytics provider.
@@ -53,8 +55,8 @@ Current posture:
 - No automated scoring, ranking, interpretation, or recommendation system.
 
 The static website can be opened locally in a browser. The Markdown files can
-be read or edited locally. The current repository does not provide a hosted
-service or live intake system.
+be read or edited locally. The current repository does not provide a backend,
+hosted account service, or live intake system.
 
 ## 3. What Data Is Currently Collected
 
@@ -69,6 +71,16 @@ Current static beta page behavior:
 - It does not create an email, mailing-list record, database row, account,
   analytics event, or payment record.
 - The repository/site does not collect beta interest or support requests.
+
+Current self-scan tool behavior:
+
+- The `/site/tool/` prototype has browser-local input fields.
+- The user chooses whether to save in the current browser or continue without
+  saving.
+- Local save uses the browser's `localStorage` under `hcct.selfScan.v1`.
+- Answers are not submitted to a backend, email service, analytics provider, or
+  maintainer.
+- Markdown export is controlled by the user and happens in the browser.
 
 Local document behavior:
 

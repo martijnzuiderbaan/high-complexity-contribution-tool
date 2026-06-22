@@ -50,15 +50,18 @@ Current state:
 - No database.
 - No external analytics provider.
 - No submitted beta form or site intake fields.
+- Browser-local self-scan input and optional localStorage in `site/tool/`.
 - No file upload.
 - No email capture provider.
 - No third-party scripts or services in the site.
 - Local-only/no-op instrumentation where analytics event names are present.
 
-The beta area in `site/index.html` has no input fields, no backend, no storage,
-no mailing-list integration, and no real submission. The current analytics
-helper in `site/script.js` exposes local no-op/debug events only. It does not
-call `fetch`, `XMLHttpRequest`, `sendBeacon`, cookies, or an external provider.
+The beta area in `site/index.html` has no input fields, no backend,
+no mailing-list integration, and no real submission. The self-scan prototype in
+`site/tool/` has browser-local input, optional localStorage, and user-controlled
+Markdown export only. The current analytics helper in `site/script.js` exposes
+local no-op/debug events only. It does not call `fetch`, `XMLHttpRequest`,
+`sendBeacon`, cookies, or an external provider.
 
 ## 3. Supported Responsible Security Practices
 

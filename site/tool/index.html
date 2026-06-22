@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Private Self-Scan | High-Complexity Contribution Tool</title>
+    <meta
+      name="description"
+      content="A client-only role-fit self-scan that helps prepare a private reflection and shareable 30-day conversation summary."
+    >
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#tool-main">Skip to self-scan</a>
+
+    <header class="tool-header">
+      <a class="brand-mark" href="../" aria-label="High-Complexity Contribution Tool home">
+        <span class="brand-symbol" aria-hidden="true">HC</span>
+        <span>High-Complexity Contribution Tool</span>
+      </a>
+      <nav class="tool-nav" aria-label="Tool navigation">
+        <a href="#/start">Start</a>
+        <a href="#/situation">Scan</a>
+        <a href="#/experiment">Experiment</a>
+        <a href="#/report">Report</a>
+      </nav>
+    </header>
+
+    <main id="tool-main" class="tool-shell">
+      <aside class="tool-rail" aria-label="Self-scan progress">
+        <p class="eyebrow">Private self-scan</p>
+        <h1>Role-fit report generator</h1>
+        <p>
+          Assemble concrete work examples, disclosure choices, and one bounded
+          30-day experiment. The tool stays in this browser.
+        </p>
+        <ol id="progress-list" class="progress-list"></ol>
+        <div class="storage-panel" aria-live="polite">
+          <span id="storage-status">Storage not selected</span>
+          <button class="text-button" id="clear-data-button" type="button">Clear local data</button>
+        </div>
+      </aside>
+
+      <section class="workspace" aria-live="polite">
+        <div id="app-root"></div>
+      </section>
+    </main>
+  </body>
+</html>

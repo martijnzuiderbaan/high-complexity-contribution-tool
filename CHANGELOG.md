@@ -31,6 +31,8 @@ record, legal review, privacy review, or production deployment log.
 - Added a proprietary commercial `LICENSE` for public testing and review.
 - Added a GitHub Pages workflow that deploys only the curated `site/` folder.
 - Added `site/robots.txt` and no-index metadata for the hosted static page.
+- Added `site/tool/`, a client-only adult self-scan prototype with optional
+  browser-local save and private/shareable Markdown exports.
 
 ### Changed
 
@@ -40,6 +42,8 @@ record, legal review, privacy review, or production deployment log.
   testing instead of publishing the full Markdown package as a Pages artifact.
 - Updated deployment wording for public repository testing with best-effort
   crawl discouragement.
+- Clarified the difference between the no-intake landing page and the
+  browser-local self-scan tool.
 
 ### Fixed
 

@@ -333,8 +333,10 @@ Current status:
   testing with best-effort crawl discouragement.
 - Final consolidation and current handoff status are recorded in
   `docs/FINAL_HANDOFF.md`.
-- Private beta remains invite-only and manual: the static site has no intake
-  fields, no backend, no storage, and no real submission.
+- Private beta remains invite-only and manual: the landing page has no intake
+  fields, no backend, and no real submission. The `/site/tool/` prototype has
+  browser-local input and optional localStorage only; it does not submit
+  answers externally.
 - No public product launch, payment flow, export package, legal/privacy
   review, facilitator guide, or export-ready package exists yet.
 - Analytics are currently limited to optional local no-op/debug
