@@ -193,8 +193,9 @@ Current files:
 - `examples/` - synthetic, non-diagnostic examples for an adult workflow,
   manager conversation, and 30-day role-design experiment.
 - `site/` - dependency-free static landing page prototype for the product,
-  with hosted links to the private repository materials for invited
-  collaborators and no intake fields.
+  with hosted links to repository materials and no intake fields.
+- `LICENSE` - proprietary commercial license terms for public testing and
+  review.
 - `AGENTS.md` - repository instructions for future Codex runs.
 
 No package manifest, build system, test suite, or runtime configuration exists
@@ -222,9 +223,8 @@ Then visit `http://127.0.0.1:8000/site/`.
 
 See `site/README.md` for static-site limits and future integration notes.
 See `docs/DEPLOYMENT.md` and `docs/DEPLOYMENT_QA.md` for static deployment
-planning. GitHub Pages hosting for the private repository is blocked by the
-current GitHub plan, so the static site remains a prepared artifact until a
-supported host or plan is chosen.
+planning. GitHub Pages can be used while the repository is public for testing,
+but the hosted site and public repository contents remain publicly accessible.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 separate 30-day experiment tracker, sample report, finished public launch
@@ -329,8 +329,8 @@ Current status:
   `docs/LAUNCH_CHECKLIST.md`, and `docs/DOCUMENTATION_INDEX.md`.
 - Current package content QA is recorded in `docs/CONTENT_QA_REPORT.md`.
 - Static-site deployment planning is recorded in `docs/DEPLOYMENT.md` and
-  `docs/DEPLOYMENT_QA.md`; GitHub Pages hosting for the private repository is
-  blocked by the current GitHub plan.
+  `docs/DEPLOYMENT_QA.md`; GitHub Pages is configured for public repository
+  testing with best-effort crawl discouragement.
 - Final consolidation and current handoff status are recorded in
   `docs/FINAL_HANDOFF.md`.
 - Private beta remains invite-only and manual: the static site has no intake
@@ -341,6 +341,13 @@ Current status:
   instrumentation; no external analytics provider is connected.
 - Security and terms materials are placeholders for launch preparation, not
   final legal, privacy, or production security assurance.
+
+## License
+
+This repository is published for testing and review under a proprietary
+commercial license. Public access to the repository does not grant permission
+to reuse, copy, distribute, host, resell, or use the materials commercially.
+See `LICENSE`.
 
 Recommended next steps:
 

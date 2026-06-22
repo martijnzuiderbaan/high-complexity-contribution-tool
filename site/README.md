@@ -4,14 +4,14 @@ This folder contains a lightweight commercial landing page for the
 High-Complexity Contribution Tool / Instrument Complexiteit naar Bijdrage.
 
 The site introduces the tool, explains the responsible-use boundaries, links to
-the private repository materials for invited collaborators, and provides an
-invite-only beta access panel with no input fields. It also links to the demo
-flow, onboarding guide, synthetic examples, draft beta disclosure,
-responsible-use guide, privacy placeholder, private beta plan, private beta
-records SOP, security posture, and terms placeholder in the private repository,
-plus the private beta release notes, documentation index, and content QA report
-created for the release package. Deployment planning is documented in
-`../docs/DEPLOYMENT.md` and `../docs/DEPLOYMENT_QA.md`.
+repository materials for public testing, and provides an invite-only beta
+access panel with no input fields. It also links to the demo flow, onboarding
+guide, synthetic examples, draft beta disclosure, responsible-use guide,
+privacy placeholder, private beta plan, private beta records SOP, security
+posture, and terms placeholder in the repository, plus the private beta release
+notes, documentation index, and content QA report created for the release
+package. Deployment planning is documented in `../docs/DEPLOYMENT.md` and
+`../docs/DEPLOYMENT_QA.md`.
 
 ## Open Locally
 
@@ -28,7 +28,7 @@ http://127.0.0.1:8000/site/
 ```
 
 The hosted page links to GitHub repository files rather than relative local
-Markdown paths. Those repository links require access to the private repository.
+Markdown paths.
 
 ## Static or Mock Only
 
@@ -45,10 +45,10 @@ Markdown paths. Those repository links require access to the private repository.
   placeholder documents plus private beta release package docs exist in
   `../docs/` and the repository root; final legal/privacy terms and production
   security assurance are still not implemented.
-- GitHub Pages hosting for the private repository is blocked by the current
-  GitHub plan. Any future host should publish only this `site/` folder and keep
-  the full Markdown package in the private repository unless broader exposure
-  is deliberately approved.
+- GitHub Pages hosting is intended only for public testing. The Pages artifact
+  should publish only this `site/` folder. The public repository itself remains
+  crawlable in practice, even with best-effort crawl discouragement on the
+  hosted page.
 
 ## Deployment Planning
 
@@ -62,8 +62,7 @@ For local preview, serve the repository root and open `/site/`:
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Future hosting should publish this `site/` directory as a curated static export
-and keep the full Markdown package in the private repository.
+Future hosting should publish this `site/` directory as a curated static export.
 
 ## To Connect Later
 

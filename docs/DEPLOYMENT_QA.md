@@ -86,7 +86,7 @@ Confirm:
 
 - Relative links resolve from the intended deployment root.
 - For a site-only hosted deployment, hosted links to `docs/`, `examples/`, and
-  `README.md` open the private GitHub repository for invited collaborators.
+  `README.md` open the GitHub repository files intended for public testing.
 - If a later provider publishes the repository root, links from `/site/` to
   `../docs/`, `../examples/`, and `../README.md` work or are intentionally
   replaced.

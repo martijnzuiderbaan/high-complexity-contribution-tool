@@ -3,10 +3,10 @@ title: Deployment Plan
 project: High-Complexity Contribution Tool
 working_name: Instrument Complexiteit naar Bijdrage
 date: 2026-06-22
-status: draft with GitHub Pages private-repo plan blocker
+status: draft with public GitHub Pages testing setup
 type: deployment planning
 language: nl-en
-use: static-site deployment preparation and current GitHub Pages blocker
+use: static-site deployment preparation and public testing setup
 ---
 
 # Deployment Plan
@@ -15,8 +15,7 @@ use: static-site deployment preparation and current GitHub Pages blocker
 
 This document prepares the repository for static-site deployment of the
 **High-Complexity Contribution Tool** / **Instrument Complexiteit naar
-Bijdrage** and records the current GitHub Pages blocker for a private
-repository.
+Bijdrage** and records the current public GitHub Pages testing setup.
 
 It does not create a backend, connect a domain, add external services, make the
 beta invite flow live, or imply public launch readiness. It remains a planning
@@ -27,10 +26,12 @@ document for static files only.
 Current architecture:
 
 - Static HTML, CSS, and JavaScript live in `site/`.
-- Hosted Markdown/document links in `site/index.html` point to private GitHub
-  repository files for invited collaborators.
-- GitHub Pages hosting for the private repository is blocked by the current
-  GitHub plan.
+- Hosted Markdown/document links in `site/index.html` point to GitHub
+  repository files for public testing.
+- `.github/workflows/pages.yml` deploys only the curated `site/` folder to
+  GitHub Pages.
+- The repository is public for testing so GitHub Pages can be enabled without a
+  private-repository Pages plan.
 - There is no build step.
 - There is no backend.
 - There is no form submission.
@@ -41,7 +42,7 @@ Current architecture:
   does not send events to an external provider.
 
 The local site can be opened directly from `site/index.html` or served from the
-repository root at `/site/`. A future static host should publish the contents of
+repository root at `/site/`. The Pages workflow publishes the contents of
 `site/` as the curated public artifact.
 
 ## 3. Recommended Deployment Approach
@@ -267,29 +268,33 @@ Recommendation:
 
 ## 4. Recommended First Deployment Target
 
-Recommended first target for a private-link reviewer preview remains:
-**Netlify static site preview**.
+Current first target for public testing: **GitHub Pages from the public
+repository**.
 
-Current requested GitHub target: **GitHub Pages from a private repository**.
-GitHub rejected this setup for the current account plan with: `Your current
-plan does not support GitHub Pages for this repository.` GitHub Pages sites are
-public on the internet even when the source repository is private, so any
-future Pages setup should deploy only the curated `site/` folder and keep the
-full Markdown package in the private repository.
+Previous private-repository attempt:
 
-Why it fits private beta:
+- GitHub rejected Pages while the repository was private with: `Your current
+  plan does not support GitHub Pages for this repository.`
+- Making the repository public removes that plan blocker, but it also makes the
+  repository contents public.
+- The Pages workflow still deploys only the curated `site/` folder, not the
+  full Markdown package as a Pages artifact.
+
+Why it fits public testing:
 
 - The repository has no build step, so a no-build static deployment is enough.
-- Preview deploys and rollback are useful for reviewer-only iteration.
-- The maintainer can keep the URL private-link only while the beta remains
-  invite-only and manual.
+- GitHub Pages keeps the public landing page close to repository history.
+- The curated workflow avoids publishing the full docs tree as the website.
 - It does not require adding backend APIs, accounts, payments, analytics,
   cookies, forms, or storage.
 
 Important limit:
 
-- A private or unlisted preview URL is not the same as true access control. Do
-  not publish sensitive data, completed workbook responses, private beta
+- A public repository and GitHub Pages site are not access controlled.
+- Robots and noindex settings can discourage indexing of the hosted page, but
+  they are not privacy controls and cannot reliably prevent crawling of public
+  GitHub repository pages.
+- Do not publish sensitive data, completed workbook responses, private beta
   records, or internal materials that would be harmful if shared.
 
 Fallback option:
@@ -328,12 +333,10 @@ What not to deploy:
 
 Docs and examples exposure:
 
-- For invite-only private-reviewer preview, `docs/` and `examples/` may be
-  reachable if the invited reviewer needs them and the URL is treated as
-  private-link only.
-- For public traffic, do not expose every planning and internal review doc by
-  default. Separate public-facing docs from internal planning and reviewer docs
-  first.
+- During public repository testing, `docs/` and `examples/` are visible in the
+  public GitHub repository even though they are not deployed as the Pages site.
+- Before any broader public launch, separate public-facing docs from internal
+  planning and reviewer docs.
 
 Release docs:
 
@@ -376,18 +379,14 @@ controls. Do not deploy sensitive material.
 
 ## 7. Static Hosting Setup Outline
 
-Current GitHub Pages target: blocked for this private repository on the current
-GitHub plan.
-
-If GitHub Pages becomes available through a plan change or a public repository,
-use a custom workflow with this high-level setup:
+Current GitHub Pages target: custom workflow in `.github/workflows/pages.yml`.
 
 1. Repository/source selection: GitHub repository on `main`.
 2. Pages build type: GitHub Actions workflow.
 3. Publish artifact: copy `site/` into `_site` and upload that artifact only.
 4. Entry point: `site/index.html` becomes the hosted Pages root `index.html`.
 5. Docs and examples: not deployed in the Pages artifact; hosted links point to
-   the private repository for invited collaborators.
+   GitHub repository files for testing.
 6. Build command: none beyond the copy step in the workflow.
 7. Analytics/forms/accounts/payments: none.
 8. Indexing: `site/index.html` includes `noindex,nofollow`; `site/robots.txt`
