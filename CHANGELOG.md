@@ -24,6 +24,8 @@ record, legal review, privacy review, or production deployment log.
 
 ### Added
 
+- Added `docs/FINAL_HANDOFF.md` for Step 19 final consolidation, open-item
+  classification, current go/no-go status, risk summary, and handoff checklist.
 - Added `docs/CONTENT_QA_REPORT.md` for the Step 17 content QA and
   consistency pass.
 

@@ -150,6 +150,9 @@ Current files:
   for future private-preview or launch preparation.
 - `docs/DEPLOYMENT_QA.md` - deployment QA checklist for future static hosting
   checks before sharing a hosted URL.
+- `docs/FINAL_HANDOFF.md` - final end-of-arc handoff, open-item
+  classification, risk summary, and next-action map for the private-beta
+  package.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
   packaging, payment planning, and commercial learning.
 - `docs/MARKETING.md` - marketing and launch messaging source document for
@@ -325,6 +328,8 @@ Current status:
 - Current package content QA is recorded in `docs/CONTENT_QA_REPORT.md`.
 - Static-site deployment planning is recorded in `docs/DEPLOYMENT.md` and
   `docs/DEPLOYMENT_QA.md`; no external deployment has been performed.
+- Final consolidation and current handoff status are recorded in
+  `docs/FINAL_HANDOFF.md`.
 - Private beta remains invite-only and manual: the static site has no intake
   fields, no backend, no storage, and no real submission.
 - No public deployment, payment flow, export package, legal/privacy review,
