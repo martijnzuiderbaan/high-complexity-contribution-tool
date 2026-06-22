@@ -44,6 +44,8 @@ a private-beta Markdown/static-site package, not a public or commercial launch.
 - [ ] Responsible-use guide: adult, coach, manager, HR, and employer rules are
   visible.
 - [ ] Security/terms placeholders: current limitations are visible.
+- [ ] Deployment planning: `docs/DEPLOYMENT.md` and
+  `docs/DEPLOYMENT_QA.md` are reviewed before any hosted preview is shared.
 - [ ] Manual records SOP: contact record, consent log, product-learning
   tracker, retention, deletion, correction, and accidental-disclosure handling
   are ready outside the repository.
@@ -173,7 +175,11 @@ Follow-up timing:
 - [ ] Support process.
 - [ ] Security/reporting route.
 - [ ] Production deployment.
+- [ ] Deployment plan reviewed.
+- [ ] Deployment QA checklist completed.
 - [ ] Domain.
+- [ ] Docs exposure decision.
+- [ ] Robots/indexing decision.
 - [ ] Link QA.
 - [ ] Accessibility QA.
 - [ ] Mobile spot-check.
@@ -185,6 +191,7 @@ Follow-up timing:
 - [ ] Data-flow review for every live form, payment, analytics, support, email,
   download, or third-party service.
 - [ ] Public/internal navigation separation.
+- [ ] Rollback plan.
 - [ ] Public package contents frozen.
 - [ ] No live service is added without privacy, retention, consent, support,
   and deletion handling.
@@ -210,6 +217,8 @@ Do not launch beyond the current stage if any of the following is true:
 ## 9. Manual QA Checklist
 
 - [ ] Static site renders locally.
+- [ ] Deployment plan and deployment QA docs are current:
+  `docs/DEPLOYMENT.md` and `docs/DEPLOYMENT_QA.md`.
 - [ ] Local links from `site/` to `../docs/`, `../examples/`, and README work
   when serving the repository root.
 - [ ] Docs links in README, package index, documentation index, and release

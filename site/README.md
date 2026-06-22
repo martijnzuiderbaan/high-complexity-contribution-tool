@@ -10,7 +10,8 @@ synthetic examples, draft beta disclosure, responsible-use guide, privacy
 placeholder, private beta plan, private beta records SOP, security posture, and
 terms placeholder in `../docs/` and `../examples/`, plus the private beta
 release notes, documentation index, and content QA report created for the
-release package.
+release package. Deployment planning is documented in `../docs/DEPLOYMENT.md`
+and `../docs/DEPLOYMENT_QA.md`.
 
 ## Open Locally
 
@@ -45,6 +46,23 @@ Serving only the `site/` directory also renders the page, but links to
   placeholder documents plus private beta release package docs exist in
   `../docs/` and the repository root; final legal/privacy terms and production
   security assurance are still not implemented.
+- No external deployment has been performed by this step.
+
+## Deployment Planning
+
+Use `../docs/DEPLOYMENT.md` for the static-hosting plan and
+`../docs/DEPLOYMENT_QA.md` for the deployment QA checklist before any hosted
+preview is shared.
+
+For local preview, serve the repository root and open `/site/`:
+
+```bash
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+Publishing only this `site/` directory will break links to `../docs/` and
+`../examples/`. A reviewer deployment should either publish the repository root
+with `/site/` as the entry point or use a deliberately curated static export.
 
 ## To Connect Later
 
@@ -55,5 +73,5 @@ Serving only the `site/` directory also renders the page, but links to
 - Replace draft privacy/disclosure/security/terms copy before public launch.
 - Follow `../docs/ANALYTICS_AND_MEASUREMENT.md` before connecting any real
   analytics provider.
-- Choose a deployment target for static hosting.
+- Choose a deployment target for static hosting using `../docs/DEPLOYMENT.md`.
 - Add link checking or lightweight content validation if the site grows.

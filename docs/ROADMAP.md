@@ -32,6 +32,8 @@ Current status:
 - Manual beta operation.
 - Static site with no input fields, no backend, no storage, no mailing-list
   integration, no external analytics, no checkout, and no real submission.
+- Static deployment planning docs exist, but no external deployment has been
+  performed.
 - Evidence-informed but not validated as a commercial, diagnostic,
   psychometric, clinical, HR, legal, or occupational-health instrument.
 
@@ -261,6 +263,9 @@ Preconditions:
 - Final privacy, terms, security/contact, support, refund, license, and claims
   materials are reviewed.
 - Static deployment target is selected and tested.
+- Deployment plan and deployment QA checklist are reviewed.
+- Public vs private-link hosting, docs exposure, and indexing decisions are
+  made.
 - Any live form, payment, analytics, download, or support service has a
   documented data-flow and retention review.
 
@@ -268,6 +273,8 @@ Required production work:
 
 - Public deployment.
 - Domain.
+- Deployment QA.
+- Rollback plan.
 - Link QA.
 - Accessibility QA.
 - Mobile spot-checks.

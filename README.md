@@ -146,6 +146,10 @@ Current files:
   beta-operational, website, and legacy/reference docs.
 - `docs/CONTENT_QA_REPORT.md` - Step 17 content QA report, consistency
   findings, edits made, remaining risks, and readiness judgment.
+- `docs/DEPLOYMENT.md` - static-site deployment plan and provider comparison
+  for future private-preview or launch preparation.
+- `docs/DEPLOYMENT_QA.md` - deployment QA checklist for future static hosting
+  checks before sharing a hosted URL.
 - `docs/MONETIZATION.md` - monetization and pricing plan for beta, paid
   packaging, payment planning, and commercial learning.
 - `docs/MARKETING.md` - marketing and launch messaging source document for
@@ -214,6 +218,8 @@ python3 -m http.server 8000
 Then visit `http://127.0.0.1:8000/site/`.
 
 See `site/README.md` for static-site limits and future integration notes.
+See `docs/DEPLOYMENT.md` and `docs/DEPLOYMENT_QA.md` for static deployment
+planning. No external deployment has been performed by this step.
 
 Useful planned artifacts that do not exist yet include a facilitator guide,
 separate 30-day experiment tracker, sample report, finished public launch
@@ -233,6 +239,8 @@ What exists now:
 - A private-beta release package: changelog, release notes, roadmap, launch
   checklist, and documentation index.
 - A content QA report/checklist for current private-beta package consistency.
+- Static deployment planning and deployment QA docs for future static-hosting
+  review.
 - Draft beta disclosure, responsible-use, privacy-placeholder, security, and
   manual records materials for private beta preparation.
 - A private beta operating plan for manual intake, staged waves, feedback,
@@ -315,6 +323,8 @@ Current status:
   `docs/PRIVATE_BETA_RELEASE_NOTES.md`, `docs/ROADMAP.md`,
   `docs/LAUNCH_CHECKLIST.md`, and `docs/DOCUMENTATION_INDEX.md`.
 - Current package content QA is recorded in `docs/CONTENT_QA_REPORT.md`.
+- Static-site deployment planning is recorded in `docs/DEPLOYMENT.md` and
+  `docs/DEPLOYMENT_QA.md`; no external deployment has been performed.
 - Private beta remains invite-only and manual: the static site has no intake
   fields, no backend, no storage, and no real submission.
 - No public deployment, payment flow, export package, legal/privacy review,
